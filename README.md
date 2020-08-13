@@ -1,4 +1,8 @@
-### Hi there 👋
+### Bem vindo! 👋
+
+No momento estou estudando e trabalhando com **Clojure** (e **ClojureScript**) e aos poucos vou adicionar conteúdo relacionado aqui.
+
+Meus pronomes são: ele/dele.
 
 <!--
 **marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
