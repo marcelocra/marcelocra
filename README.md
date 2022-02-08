@@ -1,8 +1,9 @@
 ### Bem vindo! 👋
 
-No momento estou estudando e trabalhando com **Clojure** (e **ClojureScript**) e aos poucos vou adicionar conteúdo relacionado aqui.
-
-Meus pronomes são: ele/dele.
+- 🔭 No momento, estou trabalhando com **marketing digital**
+- 🌱 ... e aprendendo **Flutter**.
+- 📫 Se quiser um site para o seu negócio, fale comigo [pelo Telegram](https://t.me/marcelocra).
+- ⚡ Fato curioso: sou engenheiro de computação por formação, mas me apaixonei pelo marketing e copywriting!
 
 <!--
 **marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
