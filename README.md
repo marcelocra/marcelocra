@@ -1,9 +1,12 @@
-### Oi! 👋
+### Oi oi, Marcelo aqui! 👋
 
-- 🔭 No momento, estou trabalhando com **marketing digital**
-- 🌱 ... e aprendendo **Flutter**.
+Esse readme e os repositórios em destaque estão bastante desatualizados.
 
-🧙🏽‍♂️ Vem coisa nova por aí...
+Tem bastante coisa nova (e interessante!) vindo aí, então fique de olho que em breve isso aqui vai mudar :).
+
+Se quiser entrar em contato comigo, só mandar mensagem [no Telegram](https://bit.ly/3NwNHXK).
+
+Até breve! o/ ;)
 
 <!--
 **marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
