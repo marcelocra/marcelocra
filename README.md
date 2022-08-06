@@ -1,12 +1,12 @@
-### Oi oi, Marcelo aqui! 👋
+### Hey, welcome! Marcelo here! 👋
 
-Esse readme e os repositórios em destaque estão bastante desatualizados.
+I'm slowly updating this, so please don't mind if repos seem a bit
+outdated. There's a lot of new (and exciting!) stuff in the works and this readme
+(along with pinned stuff) will be updated (hopefully) soon.
 
-Tem bastante coisa nova (e interessante!) vindo aí, então fique de olho que em breve isso aqui vai mudar :).
+Wanna talk to me? Just send a message on [Telegram](https://bit.ly/3NwNHXK).
 
-Se quiser entrar em contato comigo, só mandar mensagem [no Telegram](https://bit.ly/3NwNHXK).
-
-Até breve! o/ ;)
+See you soon. ;)
 
 <!--
 **marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
