@@ -14,7 +14,7 @@ Main topics are:
   - Clojure
   - maybe Rust and Go
 
-Wanna drop me a line? Just send a message on [Telegram](https://bit.ly/3NwNHXK).
+Want to get in touch? Just send a message on [Telegram](https://bit.ly/3NwNHXK).
 
 See you soon. ;)
 
