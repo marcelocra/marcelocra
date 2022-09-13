@@ -1,10 +1,20 @@
-### Hey, welcome! Marcelo here! 👋
+### Hey, there, Marcelo here 👋
 
-I'm slowly updating this, so please don't mind if repos seem a bit
-outdated. There's a lot of new (and exciting!) stuff in the works and this readme
-(along with pinned stuff) will be updated (hopefully) soon.
+This is my "coding home" and you're very much welcome!
 
-Wanna talk to me? Just send a message on [Telegram](https://bit.ly/3NwNHXK).
+I'm working on a bunch of interesting stuff that will slowly
+appear here, so follow if you'd like to know more.
+
+Main topics are:
+
+- Dev workflow, setup and tools
+- Programming languages and interesting projects
+  - Deno, Deno Fresh and Deno Deploy (all with TypeScript)
+  - F# (for web and apps, with Elmish and Bolero)
+  - Clojure
+  - maybe Rust and Go
+
+Wanna drop me a line? Just send a message on [Telegram](https://bit.ly/3NwNHXK).
 
 See you soon. ;)
 
