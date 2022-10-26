@@ -1,22 +1,21 @@
 ### Hey, there, Marcelo here 👋
 
-This is my "coding home" and you're very much welcome!
+Welcome to my coding home.
 
-I'm working on a bunch of interesting stuff that will slowly
-appear here, so follow if you'd like to know more.
+I'm working on a bunch of interesting stuff that will slowly appear here, so
+follow if you'd like to know more.
 
-Main topics are:
+Main topics:
 
-- Dev workflow, setup and tools
-- Programming languages and interesting projects
-  - Deno, Deno Fresh and Deno Deploy (all with TypeScript)
+- Dev workflow, setup and tools, with a focus on productivity
+- Programming languages and projects interests:
+  - Deno, Deno Fresh and Deno Deploy
+  - Clojure and ClojureScript
   - F# (for web and apps, with Elmish and Bolero)
-  - Clojure
-  - maybe Rust and Go
 
-Want to get in touch? Just send a message on [Telegram](https://bit.ly/3NwNHXK).
+You can reach me easily on [Telegram](https://bit.ly/3NwNHXK).
 
-See you soon. ;)
+Cheers! ;)
 
 <!--
 **marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
