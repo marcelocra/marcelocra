@@ -14,7 +14,7 @@ Main topics:
   - F# (for web and apps, with Elmish and Bolero)
 
 You can reach me easily on [Telegram](https://bit.ly/3NwNHXK) or on
-<a href="https://mastodon.social/@marcelocra" rel="nofollow me">Mastodon</a>.
+<a href="https://mastodon.social/@marcelocra" rel="nofollow" rel="me">Mastodon</a>.
 
 Cheers! ;)
 
