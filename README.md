@@ -13,8 +13,7 @@ Main topics:
   - Clojure and ClojureScript
   - F# (for web and apps, with Elmish and Bolero)
 
-You can reach me easily on [Telegram](https://bit.ly/3NwNHXK) or on
-<a href="https://mastodon.social/@marcelocra" rel="nofollow" rel="me">Mastodon</a>.
+You can reach me easily on [Telegram](https://bit.ly/3NwNHXK).
 
 Cheers! ;)
 
