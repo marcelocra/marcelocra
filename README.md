@@ -18,6 +18,12 @@ You can reach me easily on [Telegram](https://bit.ly/3NwNHXK) or on
 
 Cheers! ;)
 
+### Some stats
+
+![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script&langs_count=10)
+
+I'm ignoring some stuff because I only use them when I need to.
+
 <!--
 **marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
