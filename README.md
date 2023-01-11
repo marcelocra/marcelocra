@@ -7,14 +7,14 @@ follow if you'd like to know more.
 
 Main topics:
 
-- Dev workflow, setup and tools, with a focus on productivity
+- Dev workflow, setup and tools, with focus on productivity
 - Programming languages and projects interests:
-  - Deno, Deno Fresh and Deno Deploy
+  - TypeScript, Deno, Deno Fresh and Deno Deploy
+  - Svelte and Astro
   - Clojure and ClojureScript
-  - F# (for web and apps, with Elmish and Bolero)
+  - F#
 
-You can reach me easily on [Telegram](https://bit.ly/3NwNHXK) or on
-<a rel="me" href="https://mastodon.social/@marcelocra">Mastodon</a>.
+You can reach me easily on [Telegram](https://bit.ly/3NwNHXK).
 
 Cheers! ;)
 
@@ -24,17 +24,14 @@ Cheers! ;)
 
 I'm ignoring some stuff because I only use them when I need to.
 
-<!--
-**marcelocra/marcelocra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Some random
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🔭 I'm currently working on a new project that provides a better solution
+  to learning when using the web browser
+- 🌱 I'm currently learning F#
+- 👯 I'm looking to collaborate on any interesting open source project
+- 🤔 I'm looking for help with building a great company
+- 💬 Ask me about dancing :)
+- 📫 How to reach me: Telegram, above
+- 😄 Pronouns: he/him/his
+- ⚡ Fun fact: I'm an advanced Forró dancer (a brazilian dance style)
