@@ -96,6 +96,6 @@ There are more, but I won't remember all of them now.
 - Elixir
 
 ## Projects <a name="projects"></a>
-_[(Go to the top)](#toc)_
+_[(Go to the top)](#me)_
 
 Currently, take a look at the highlighted ones, but I might choose to share more than those, so keep an eye out.
