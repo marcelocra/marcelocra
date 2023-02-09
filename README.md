@@ -1,45 +1,101 @@
-### Hey, there, Marcelo here 👋
+## Marcelo Almeida <a name="me"></a>
+_I think before I code_
 
-Welcome to my coding home.
+Software Designer and Developer 💎 Beautiful, clean code works better.
 
-I'm working on a bunch of interesting stuff that will slowly appear here, so
-follow if you'd like to know more.
+- ex-Googler - 4.5 years
+- Computer Engineer - ITA (Instituto Tecnológico de Aeronáutica)
 
-Main topics:
+**I quit Google to follow my entrepreneurship dreams and am still doing that**.
 
-- Dev workflow, setup and tools, with focus on productivity
-- Programming languages and projects interests:
-  - TypeScript, Deno, Deno Fresh and Deno Deploy
-  - Svelte and Astro
-  - Clojure and ClojureScript
-  - F#
+If you want to hear about that story and others (most likely in Brazilian Portuguese), follow me on [LinkedIn](https://www.linkedin.com/in/marcelocra/).
 
-You can reach me easily on [Telegram](https://bit.ly/3NwNHXK).
+Cheers!\
+Marcelo.
 
-Cheers! ;)
+## Table of contents <a name="toc"></a>
 
-### Some stats
+- [The most important things I learned so far](#imp)
+- [What do I mean by "solid foundations"?](#solid)
+- [Cool but... what have you worked with?](#tech)
+    - [Used in at least one project](#project)
+    - [Played a little bit with](#played)
+    - [Read about](#read-about)
+- [Projects](#projects)
 
-<!-- 
+## The most important things I learned so far <a name="imp"></a>
 
-_As of 17jan23:_
+- knowing technologies is overrated. With solid foundations you can learn and master any technology
+- start with the problem, not the technology that you want to use
+- thinking about a problem and solution (doing architecture and design work) before actually coding goes a long way towards maintainability
+- bad communication is the root of a huge number of problems
+- people underestimate (a lot!) the power of good documentation
+- automated testing is a must have for non-trivial projects
+- good UX (at least) is essential
 
-![Most used languages](https://user-images.githubusercontent.com/2532492/212804054-9d4f69b6-7d32-478a-b486-0e76239d523c.png)
+## What do I mean by "solid foundations"? <a name="solid"></a>
 
--->
- 
-![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10)
+Essentially, having above average (at least) knowledge of the following topics:
 
-_(I hid some languages because I don't care about them..)_
+- algorithms and data structures
+- software design and architecture
+- programming logic
+- testing
+- documentation
+- code review
+- communication
+- UX
 
-### Some random
+## Cool but... what have you worked with? <a name="tech"></a>
 
-- 🔭 I'm currently working on a new project that provides a better solution
-  to learning when using the web browser
-- 🌱 I'm currently learning F#
-- 👯 I'm looking to collaborate on any interesting open source project
-- 🤔 I'm looking for help with building a great company
-- 💬 Ask me about dancing :)
-- 📫 How to reach me: Telegram, above
-- 😄 Pronouns: he/him/his
-- ⚡ Fun fact: I'm an advanced Forró dancer (a brazilian dance style)
+Ok.. the technologies that I used the most are:
+
+- JavaScript (React, Node.js)
+- Python
+- C++ ([please no](https://www.youtube.com/watch?v=umDr0mPuyQc))
+- Protocol Buffers
+- HTML/CSS
+- TypeScript
+- Vim
+- VSCode
+- Bazel (build system)
+- Bash ([noooooooo](https://www.youtube.com/watch?v=umDr0mPuyQc))
+- Java (also no)
+- REST (for APIs and databases - think crud)
+- SQL/NoSQL
+
+But I used a LOT of others. I'll separate them into three groups.
+
+There are more, but I won't remember all of them now.
+
+### Used in at least one project <a name="project"></a>
+
+- Svelte
+- Tailwind Css
+- Deno
+- Next.js
+- ClojureScript
+- Go
+- Tachyons Css
+- jQuery
+- Objective-C (prior to Swift creation)
+
+### Played a little bit with <a name="played"></a>
+
+- Dart and Flutter
+- Ruby (and Rails)
+- Elm
+- Rust
+
+### Read about <a name="read-about"></a>
+
+- Haskell
+- Unison
+- Ocaml
+- Erlang
+- Elixir
+
+## Projects <a name="projects"></a>
+_[(Go to the top)](#toc)_
+
+Currently, take a look at the highlighted ones, but I might choose to share more than those, so keep an eye out.
