@@ -71,6 +71,7 @@ There are more, but I won't remember all of them now.
 ### Used in at least one project <a name="project"></a>
 
 - Svelte
+- Astro
 - Tailwind Css
 - Deno
 - Next.js
@@ -89,6 +90,7 @@ There are more, but I won't remember all of them now.
 
 ### Read about <a name="read-about"></a>
 
+- F#
 - Haskell
 - Unison
 - Ocaml
