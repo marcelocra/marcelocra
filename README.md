@@ -8,9 +8,9 @@ Software Designer and Developer 💎 Beautiful, clean code works better.
 
 **I quit Google to follow my entrepreneurship dreams!**
 
-I share a bit of what I learned and am learning [here](./details.md),
-[in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese) and in my
-social pages (links in profile).
+I share a bit of what I learned and am learning [here](./details.md) (in
+English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese) 
+and in my social pages (links in profile, also in Portuguese).
 
 Cheers!\
 Marcelo.
