@@ -14,3 +14,7 @@ and in my social pages (links in profile, also in Portuguese).
 
 Cheers!\
 Marcelo.
+
+## Some stats
+
+![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&bg_color=DEG,#e96443,#904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10)
