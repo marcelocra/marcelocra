@@ -16,14 +16,20 @@ and in my social pages (links in profile, also in Portuguese).
 Cheers!\
 Marcelo.
 
-## GitHub historic stats
+## GitHub stats
+
+**Latest**: April 4, 2023, 22:49:44
+
+![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
 
 [See it in real time](./details.md#github-stats-now).
 
 <details>
 
-<summary><strong>[Latest]</strong> April 4, 2023, 22:49:44</summary>
+<summary><h3>Historic data</h3></summary>
 
-![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
+#### January 17, 2023
+
+![](./images/github-stats/Screenshot%20from%202023-01-17.png)
 
 </details>
