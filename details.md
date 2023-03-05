@@ -120,7 +120,7 @@ Currently, take a look at the highlighted ones in the
 
 ## Appendix <a name="appendix"></a>
 
-### GitHub stats now <a name="gh-stats-now"></a>
+### GitHub stats now <a name="github-stats-now"></a>
 
 <!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
