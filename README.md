@@ -1,25 +1,29 @@
 ## Marcelo Almeida
+
 _Think before coding._
 
 Software Designer and Developer 💎 Beautiful, clean code works better.
 
-- ex-Googler - 4.5 years
-- Computer Engineer - ITA (Instituto Tecnológico de Aeronáutica) 🇧🇷 
+-   ex-Googler - 4.5 years
+-   Computer Engineer - ITA (Instituto Tecnológico de Aeronáutica) 🇧🇷
 
-**I quit Google to follow my entrepreneurship dreams!**
+**I quit Google to follow my entrepreneurship dreams.**
 
 I share a bit of what I learned and am learning [here](./details.md) (in
-English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese) 
+English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese)
 and in my social pages (links in profile, also in Portuguese).
 
 Cheers!\
 Marcelo.
 
-## Some stats
+## GitHub historic stats
 
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
+[See it in real time](./details.md#github-stats-now).
 
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
+<details>
 
-| <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=buefy&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10" /></a> |
-| ------------- | ------------- |
+<summary><strong>[Latest]</strong> April 4, 2023, 22:49:44</summary>
+
+![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
+
+</details>
