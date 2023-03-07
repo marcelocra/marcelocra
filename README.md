@@ -18,15 +18,18 @@ Marcelo.
 
 ## GitHub stats
 
-**Latest**: April 4, 2023, 22:49:44
+_[See it in real time](./details.md#github-stats-now)._
 
-![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
+### Latest: March 7, 2023, 7:33:23
 
-[See it in real time](./details.md#github-stats-now).
+![](./images/github-stats/Screenshot%20from%202023-03-07%2007-33-23.png)
 
 <details>
-
 <summary><h3>Historic data</h3></summary>
+
+#### March 4, 2023, 22:49:44
+
+![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
 
 #### January 17, 2023
 
