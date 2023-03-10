@@ -45,6 +45,7 @@
 -   Good UX is essential if you are serious about you project.
 
 ## Do you have solid foundations? <a name="solid-foundations"></a>
+_[(Go to the top)](#me)_
 
 Essentially, to consider that you have it, you should have above average (at
 least) knowledge of the following topics:
@@ -59,6 +60,7 @@ least) knowledge of the following topics:
 -   UX
 
 ## What technologies/languages have I worked with? <a name="tech"></a>
+_[(Go to the top)](#me)_
 
 The ones that I used the most are:
 
@@ -81,6 +83,7 @@ But I used a LOT of others. I'll separate them into three groups.
 There are more, but I won't remember all of them now.
 
 ### Used in at least one project <a name="project"></a>
+_[(Go to the top)](#me)_
 
 -   Svelte
 -   Astro
@@ -94,6 +97,7 @@ There are more, but I won't remember all of them now.
 -   Objective-C (prior to Swift creation)
 
 ### Played a little bit with <a name="played"></a>
+_[(Go to the top)](#me)_
 
 -   Dart and Flutter
 -   Ruby (and Rails)
@@ -101,6 +105,7 @@ There are more, but I won't remember all of them now.
 -   Rust
 
 ### Read about <a name="read-about"></a>
+_[(Go to the top)](#me)_
 
 -   F#
 -   Haskell
