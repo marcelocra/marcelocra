@@ -8,8 +8,6 @@
     -   [Used in at least one project](#project)
     -   [Played a little bit with](#played)
     -   [Read about](#read-about)
--   [GitHub Stats](#stats)
-    -   [April 4, 2023, 22:49:44](#april-4-2023-224944)
 -   [Projects](#projects)
 -   [Appendix](#appendix)
     -   [GitHub stats now](#github-stats-now)
