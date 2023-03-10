@@ -20,12 +20,19 @@ Marcelo.
 
 _[See it in real time](./details.md#github-stats-now)._
 
-### Latest: March 7, 2023, 7:33:23
+### Latest: March 10, 2023, 06:29:24
 
-![](./images/github-stats/Screenshot%20from%202023-03-07%2007-33-23.png)
+As I work through different language tracks on [Exercism](https://exercism.org),
+this graph will change more.
+
+![](./images/github-stats/Screenshot%20from%202023-03-10%2006-29-24.png)
 
 <details>
 <summary><h3>Historic data</h3></summary>
+
+#### March 7, 2023, 7:33:23
+
+![](./images/github-stats/Screenshot%20from%202023-03-07%2007-33-23.png)
 
 #### March 4, 2023, 22:49:44
 
