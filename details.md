@@ -45,7 +45,8 @@
 -   Good UX is essential if you are serious about you project.
 
 ## Do you have solid foundations? <a name="solid-foundations"></a>
-_[(Go to the top)](#me)_
+
+_[<small>(Back to the top)</small>](#me)_
 
 Essentially, to consider that you have it, you should have above average (at
 least) knowledge of the following topics:
@@ -60,7 +61,8 @@ least) knowledge of the following topics:
 -   UX
 
 ## What technologies/languages have I worked with? <a name="tech"></a>
-_[(Go to the top)](#me)_
+
+_[<small>(Back to the top)</small>](#me)_
 
 The ones that I used the most are:
 
@@ -83,7 +85,8 @@ But I used a LOT of others. I'll separate them into three groups.
 There are more, but I won't remember all of them now.
 
 ### Used in at least one project <a name="project"></a>
-_[(Go to the top)](#me)_
+
+_[<small>(Back to the top)</small>](#me)_
 
 -   Svelte
 -   Astro
@@ -97,7 +100,8 @@ _[(Go to the top)](#me)_
 -   Objective-C (prior to Swift creation)
 
 ### Played a little bit with <a name="played"></a>
-_[(Go to the top)](#me)_
+
+_[<small>(Back to the top)</small>](#me)_
 
 -   Dart and Flutter
 -   Ruby (and Rails)
@@ -105,7 +109,8 @@ _[(Go to the top)](#me)_
 -   Rust
 
 ### Read about <a name="read-about"></a>
-_[(Go to the top)](#me)_
+
+_[<small>(Back to the top)</small>](#me)_
 
 -   F#
 -   Haskell
@@ -116,7 +121,7 @@ _[(Go to the top)](#me)_
 
 ## Projects <a name="projects"></a>
 
-_[(Go to the top)](#me)_
+_[<small>(Back to the top)</small>](#me)_
 
 Currently, take a look at the highlighted ones in the
 [main page](https://github.com/marcelocra).
@@ -130,4 +135,4 @@ Currently, take a look at the highlighted ones in the
 <!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=buefy&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=20" /></a> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
