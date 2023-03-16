@@ -18,28 +18,11 @@ Marcelo.
 
 ## GitHub stats
 
-_[See it in real time](./details.md#github-stats-now)._
+_[Historic data](./details.md#github-stats-history)._
 
-### Latest: March 10, 2023, 06:29:24
+<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
-As I work through different language tracks on [Exercism](https://exercism.org),
-this graph will change more.
+<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
-![](./images/github-stats/Screenshot%20from%202023-03-10%2006-29-24.png)
-
-<details>
-<summary><h3>Historic data</h3></summary>
-
-#### March 7, 2023, 7:33:23
-
-![](./images/github-stats/Screenshot%20from%202023-03-07%2007-33-23.png)
-
-#### March 4, 2023, 22:49:44
-
-![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
-
-#### January 17, 2023
-
-![](./images/github-stats/Screenshot%20from%202023-01-17.png)
-
-</details>
+| <img align="center" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="marcelocra's github stats" /> | <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=buefy&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=20" /> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

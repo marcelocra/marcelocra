@@ -10,7 +10,7 @@
     -   [Read about](#read-about)
 -   [Projects](#projects)
 -   [Appendix](#appendix)
-    -   [GitHub stats now](#github-stats-now)
+    -   [GitHub stats history](#github-stats-history)
 
 ## The most important things that everyone should know <a name="should-know"></a>
 
@@ -128,11 +128,27 @@ Currently, take a look at the highlighted ones in the
 
 ## Appendix <a name="appendix"></a>
 
-### GitHub stats now <a name="github-stats-now"></a>
+### GitHub stats history <a name="github-stats-history"></a>
 
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
+Saving historic data just to see how things change over time.
 
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
+### March 10, 2023, 06:29:24
 
-| <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Anurag's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=buefy&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=20" /></a> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+As I work through different language tracks on [Exercism](https://exercism.org),
+this graph will change more.
+
+![](./images/github-stats/Screenshot%20from%202023-03-10%2006-29-24.png)
+
+#### March 7, 2023, 7:33:23
+
+![](./images/github-stats/Screenshot%20from%202023-03-07%2007-33-23.png)
+
+#### March 4, 2023, 22:49:44
+
+![](./images/github-stats/Screenshot%20from%202023-03-04%2022-49-55.png)
+
+#### January 17, 2023
+
+![](./images/github-stats/Screenshot%20from%202023-01-17.png)
+
+</details>
