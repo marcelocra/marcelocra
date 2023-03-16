@@ -132,7 +132,15 @@ Currently, take a look at the highlighted ones in the
 
 Saving historic data just to see how things change over time.
 
-### March 10, 2023, 06:29:24
+#### March 16, 2023, 05:24:34
+
+Clojure's and JavaScripts' percentage increase doesn't make sense. I haven't
+been writing thoses in my repos for a while now... actually, I've been writing
+JavaScript, but not Clojure... what gives?
+
+![](./images/github-stats/Screenshot%20from%202023-03-16%2005-24-34.png)
+
+#### March 10, 2023, 06:29:24
 
 As I work through different language tracks on [Exercism](https://exercism.org),
 this graph will change more.
@@ -150,5 +158,3 @@ this graph will change more.
 #### January 17, 2023
 
 ![](./images/github-stats/Screenshot%20from%202023-01-17.png)
-
-</details>
