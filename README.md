@@ -4,7 +4,7 @@ _Think before coding._
 
 Software Designer and Developer 💎 Beautiful, clean code works better.
 
--   ex-Googler - 4.5 years
+-   ex-Googler
 -   Computer Engineer - ITA (Instituto Tecnológico de Aeronáutica) 🇧🇷
 
 **I quit Google to follow my entrepreneurship dreams.**
