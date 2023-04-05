@@ -13,7 +13,7 @@ Software Designer and Developer 💎 Beautiful, clean code works better.
 
 I share a bit of what I learned and am learning in this page, see TOC below (in
 English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese)
-and soon in my social pages (links in profile, also in Portuguese).
+and soon in my social pages (also in Portuguese, links in the profile).
 
 Cheers!\
 Marcelo.
