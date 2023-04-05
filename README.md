@@ -10,7 +10,7 @@ Software Designer and Developer 💎 Beautiful, clean code works better.
 **I quit Google to follow my entrepreneurship dreams.**
 
 I share a bit of what I learned and am learning
-[here](https://github.com/marcelocra/marcelocra/blob/master/details.md#table-of-contents-)
+<a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#table-of-contents-" target="_blank">here</a>
 (in English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese)
 and in my social pages (links in profile, also in Portuguese).
 
@@ -19,7 +19,7 @@ Marcelo.
 
 ## GitHub stats
 
-_[Historic data](https://github.com/marcelocra/marcelocra/blob/master/details.md#github-stats-history-)._
+_<a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#github-stats-history-" target="_blank">Historic data</a>_
 
 <!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
