@@ -18,7 +18,7 @@ Marcelo.
 
 ## GitHub stats
 
-_[Historic data](./details.md#github-stats-history)._
+_[Historic data](./details.md#github-stats-history-)._
 
 <!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
