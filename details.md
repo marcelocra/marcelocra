@@ -16,40 +16,40 @@
 
 -   Knowing technologies is **overrated**. With solid foundations you can learn
     and master most technologies.
--   But... knowing technologies extremelly well is **underrated**. Being the
+-   **BUT**... knowing technologies extremelly well is **underrated**. Being the
     go-to person about anything is really good both for your career and yourself
     (mentally).
--   And... **some technologies are really bad**, particularly regarding
+-   **AND**... **some technologies are really bad**, particularly regarding
     developer experience (DX). DX is one of the most important things to keep
-    you and other engineering people highly productive.
+    you and other developers highly productive.
 -   Thinking about a problem and its solution (architecture, design, etc) before
-    actually coding goes a long way towards maintainability. _(That's why I
-    mention in the initial page that I think before I code. You should do it
-    too.)_
+    actually coding goes a long way towards maintainability.
 -   Start with the problem, not the technology that you want to use. Unless, of
-    course, it is a toy project that you are using to learn something.
--   Bad communication is the root of a huge number of problems. Really. Some
+    course, it is a toy project that you are using to learn something new.
+-   **Bad communication** is the root of a HUGE number of problems. Really. Some
     very basic stuff is:
     1. Just because you sent a message or an email it doesn't mean that the
        other person received it. Trust, but verify.
     1. Sending a document to people in a Slack channel or email doesn't mean
-       that the stakeholders read it. Check with them and make sure that
-       everyone is in the same page.
-    1. Overcommunicating with ALWAYS be better than undercommunicating.
--   People underestimate (a lot!) the power of good documentation. It can save
-    lots of hours of meetings. And it also helps with the bad communication
-    problem: you can ping people pointing to a doc written that was once and
-    agreed upon instead of having to write the same message over and over again
-    (or even worse, have the same meeting over and over).
+       that every stakeholder will read it. Check with them and make sure that
+       everyone is in sync.
+    1. Overcommunicating will almost ALWAYS be better than undercommunicating.
+-   People **underestimate (a lot!) the power of good documentation**. It can save
+    hours of meetings and avoid having people as "single points of failure".
+    And it also helps with the bad communication problem: you can always refer
+    to the same doc that was written once and agreed upon, instead of having to
+    write the same messages or have the same meeting over and over. Basically,
+    DRY.
 -   Automated testing is a MUST HAVE for any non-trivial projects.
--   Good UX is essential if you are serious about you project.
+-   Good UX is essential if you are serious about your project.
 
-## Do you have solid foundations? <a name="solid-foundations"></a>
+## Solid foundations are extremely important in the new AI phase of software development <a name="solid-foundations"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
-Essentially, to consider that you have it, you should have above average (at
-least) knowledge of the following topics:
+With the rapid development of new (and great!) AI coding "assistants", like
+GitHub Copilot, having solid foundations is what will give you an edge. You
+should know well the following topics:
 
 -   algorithms and data structures
 -   software design and architecture
@@ -68,21 +68,21 @@ The ones that I used the most are:
 
 -   JavaScript (React, Node.js)
 -   Python
--   C++ ([please no](https://www.youtube.com/watch?v=umDr0mPuyQc))
+-   C++ ([but won't do it again](https://www.youtube.com/watch?v=umDr0mPuyQc))
 -   Protocol Buffers
 -   HTML/CSS
 -   TypeScript
 -   Vim
 -   VSCode
 -   Bazel (build system)
--   Bash ([noooooooo](https://www.youtube.com/watch?v=umDr0mPuyQc))
--   Java (also no)
--   REST (for APIs and databases - think crud)
+-   Bash ([only when unavoidable](https://www.youtube.com/watch?v=umDr0mPuyQc))
+-   Java (not really into this, specially with Kotlin and friends around)
+-   REST (for APIs and databases - think CRUD)
 -   SQL/NoSQL
 
-But I used a LOT of others. I'll separate them into three groups.
+But I used a LOT of others that I won't remember now.
 
-There are more, but I won't remember all of them now.
+I'll separate them into three groups:
 
 ### Used in at least one project <a name="project"></a>
 
@@ -90,29 +90,31 @@ _[<small>(Back to the top)</small>](#me)_
 
 -   Svelte
 -   Astro
--   Tailwind Css
+-   Tailwind CSS
 -   Deno
 -   Next.js
 -   ClojureScript
 -   Go
--   Tachyons Css
+-   Tachyons CSS
+-   Bulma CSS
 -   jQuery
--   Objective-C (prior to Swift creation)
+-   Objective-C
 
 ### Played a little bit with <a name="played"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
 -   Dart and Flutter
+-   F#
 -   Ruby (and Rails)
 -   Elm
 -   Rust
+-   V (vlang.io)
 
 ### Read about <a name="read-about"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
--   F#
 -   Haskell
 -   Unison
 -   Ocaml
