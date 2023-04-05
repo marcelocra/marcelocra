@@ -161,7 +161,8 @@ Currently, take a look at the highlighted ones in the
 
 ### GitHub stats history <a name="github-stats-history"></a>
 
-Saving historic data just to see how things change over time.
+<details>
+<summary>Saving historic data just to see how things change over time.</summary>
 
 #### March 16, 2023, 05:24:34
 
@@ -189,3 +190,5 @@ this graph will change more.
 #### January 17, 2023
 
 ![](./images/github-stats/Screenshot%20from%202023-01-17.png)
+
+</details>
