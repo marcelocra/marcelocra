@@ -12,7 +12,7 @@ Software Designer and Developer 💎 Beautiful, clean code works better.
 I share a bit of what I learned and am learning
 <a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#table-of-contents-" target="_blank">here</a>
 (in English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese)
-and in my social pages (links in profile, also in Portuguese).
+and in my social pages (also in Portuguese, links in the profile).
 
 Cheers!\
 Marcelo.
