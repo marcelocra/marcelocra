@@ -63,12 +63,12 @@ _[Historic data](./details.md#github-stats-history)._
        that every stakeholder will read it. Check with them and make sure that
        everyone is in sync.
     1. Overcommunicating will almost ALWAYS be better than undercommunicating.
--   People **underestimate (a lot!) the power of good documentation**. It can save
-    hours of meetings and avoid having people as "single points of failure".
-    And it also helps with the bad communication problem: you can always refer
-    to the same doc that was written once and agreed upon, instead of having to
-    write the same messages or have the same meeting over and over. Basically,
-    DRY.
+-   People **underestimate (a lot!) the power of good documentation**. It can
+    save hours of meetings and avoid having people as "single points of
+    failure". And it also helps with the bad communication problem: you can
+    always refer to the same doc that was written once and agreed upon, instead
+    of having to write the same messages or have the same meeting over and over.
+    Basically, DRY.
 -   Automated testing is a MUST HAVE for any non-trivial projects.
 -   Good UX is essential if you are serious about your project.
 
@@ -165,10 +165,9 @@ Currently, take a look at the highlighted ones in the
 <summary>Saving historic data just to see how things change over time.</summary>
 
 #### April 30, 2023, 20:50:45
-    
-![](./images/github-stats/Screenshot%20from%202023-04-30%2020-20-45.png)
 
-    
+![](./images/github-stats/Screenshot%20from%202023-04-30%2020-50-45.png)
+
 #### March 16, 2023, 05:24:34
 
 Clojure's and JavaScripts' percentage increase doesn't make sense. I haven't
