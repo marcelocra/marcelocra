@@ -164,6 +164,11 @@ Currently, take a look at the highlighted ones in the
 <details>
 <summary>Saving historic data just to see how things change over time.</summary>
 
+#### April 30, 2023, 20:50:45
+    
+![](./images/github-stats/Screenshot%20from%202023-04-30%2020-20-45.png)
+
+    
 #### March 16, 2023, 05:24:34
 
 Clojure's and JavaScripts' percentage increase doesn't make sense. I haven't
