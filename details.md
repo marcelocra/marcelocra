@@ -164,6 +164,15 @@ Currently, take a look at the highlighted ones in the
 <details>
 <summary>Saving historic data just to see how things change over time.</summary>
 
+#### May 1, 2023, 10:44:27
+
+I made one just yesterday, before playing with Zig, and didn't think would make
+another one today, but seems like only a couple of lines of Zig were enough to
+put it above Go, so here we are. I guess this is because I'm excluding a number
+of other "languages" I used, like Bash, PowerShell, etc.
+
+![](./images/github-stats/Screenshot%20from%202023-05-01%2010-44-27.png)
+
 #### April 30, 2023, 20:50:45
 
 ![](./images/github-stats/Screenshot%20from%202023-04-30%2020-50-45.png)
