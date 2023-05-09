@@ -31,7 +31,7 @@ _<a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#github
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 <details>
-<summary>FYI: I'm ignoring some languages. Click here to see reasons.</summary>
+<summary>FYI: I'm ignoring some languages. Click here to see the reasons.</summary>
 <br />
 
 1. I haven't used them in a long time: Python, Java, C
