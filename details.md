@@ -164,6 +164,10 @@ Currently, take a look at the highlighted ones in the
 <details>
 <summary>Saving historic data just to see how things change over time.</summary>
 
+#### Feb 16, 2024, 00:37:36
+
+![Screenshot from 2024-02-16 00-37-36](https://github.com/marcelocra/marcelocra/assets/2532492/555503de-1a5e-44ed-906e-44d5d16d7e0a)
+
 #### May 1, 2023, 10:44:27
 
 I made one just yesterday, before playing with Zig, and didn't think would make
