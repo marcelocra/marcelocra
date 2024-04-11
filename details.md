@@ -31,9 +31,9 @@ _[Historic data](./details.md#github-stats-history)._
 
 ## Table of contents <a name="toc"></a>
 
--   [The most important things that everyone should know](#should-know)
--   [Do you have solid foundations?](#solid-foundations)
--   [What technologies/languages have I worked with? ](#tech)
+-   [The most important things that I learned so far](#should-know)
+-   [Will I be replaced by AI?](#solid-foundations)
+-   [What technologies/languages have I worked with?](#tech)
     -   [Used in at least one project](#project)
     -   [Played a little bit with](#played)
     -   [Read about](#read-about)
@@ -41,7 +41,7 @@ _[Historic data](./details.md#github-stats-history)._
 -   [Appendix](#appendix)
     -   [GitHub stats history](#github-stats-history)
 
-## The most important things that everyone should know <a name="should-know"></a>
+## The most important things that I learned so far <a name="should-know"></a>
 
 -   Knowing technologies is **overrated**. With solid foundations you can learn
     and master most technologies.
@@ -68,17 +68,26 @@ _[Historic data](./details.md#github-stats-history)._
     failure". And it also helps with the bad communication problem: you can
     always refer to the same doc that was written once and agreed upon, instead
     of having to write the same messages or have the same meeting over and over.
-    Basically, DRY.
+    Basically, DRY ("don't repeat yourself", a software development principle).
 -   Automated testing is a MUST HAVE for any non-trivial projects.
 -   Good UX is essential if you are serious about your project.
 
-## Solid foundations are extremely important in the new AI phase of software development <a name="solid-foundations"></a>
+## Will I be replaced by AI? <a name="solid-foundations"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
-With the rapid development of new (and great!) AI coding "assistants", like
-GitHub Copilot, having solid foundations is what will give you an edge. You
-should know well the following topics:
+I have no idea! But I don't think so!
+
+I've been using both GitHub Copilot and ChatGPT to help me be more productive
+and I think they are great at that!
+
+I do believe that one needs solid foundations in order to employ these tools
+effectively.
+
+For example, how will I know that the AI gave me a good algorithmic solution
+for a problem if I don't understand what the bound are?
+
+I have a list of stuff that I consider very important:
 
 -   algorithms and data structures
 -   software design and architecture
