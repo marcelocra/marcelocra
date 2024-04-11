@@ -79,15 +79,13 @@ _[<small>(Back to the top)</small>](#me)_
 I have no idea! But I don't think so!
 
 I've been using both GitHub Copilot and ChatGPT to help me be more productive
-and I think they are great at that!
+and think they are great at that!
 
 I do believe that one needs solid foundations in order to employ these tools
-effectively.
-
-For example, how will I know that the AI gave me a good algorithmic solution
+effectively. For example, how will I know that the AI gave me a good algorithmic solution
 for a problem if I don't understand what the bound are?
 
-I have a list of stuff that I consider very important:
+Here is a list of stuff that I consider very important:
 
 -   algorithms and data structures
 -   software design and architecture
@@ -95,8 +93,8 @@ I have a list of stuff that I consider very important:
 -   testing
 -   documentation
 -   code review
--   communication
--   UX
+-   great communication
+-   great UI and UX
 
 ## What technologies/languages have I worked with? <a name="tech"></a>
 
@@ -106,21 +104,21 @@ The ones that I used the most are:
 
 -   JavaScript (React, Node.js)
 -   Python
--   C++ ([but won't do it again](https://www.youtube.com/watch?v=umDr0mPuyQc))
+-   C++
 -   Protocol Buffers
 -   HTML/CSS
 -   TypeScript
 -   Vim
 -   VSCode
 -   Bazel (build system)
--   Bash ([only when unavoidable](https://www.youtube.com/watch?v=umDr0mPuyQc))
--   Java (not really into this, specially with Kotlin and friends around)
+-   [Bash](https://www.youtube.com/watch?v=umDr0mPuyQc)
+-   Java
 -   REST (for APIs and databases - think CRUD)
 -   SQL/NoSQL
 
-But I used a LOT of others that I won't remember now.
+There's more, probably.
 
-I'll separate them into three groups:
+Other ones I used way less and will separate into three groups:
 
 ### Used in at least one project <a name="project"></a>
 
@@ -163,7 +161,7 @@ _[<small>(Back to the top)</small>](#me)_
 
 _[<small>(Back to the top)</small>](#me)_
 
-Currently, take a look at the highlighted ones in the
+Currently, take a look at the highlighted ones at the
 [main page](https://github.com/marcelocra).
 
 ## Appendix <a name="appendix"></a>
