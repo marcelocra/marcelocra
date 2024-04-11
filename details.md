@@ -100,7 +100,7 @@ Here is a list of stuff that I consider very important:
 
 _[<small>(Back to the top)</small>](#me)_
 
-The ones that I used the most are:
+### The ones that I used the most are
 
 -   JavaScript (React, Node.js)
 -   Python
@@ -118,9 +118,9 @@ The ones that I used the most are:
 
 There's more, probably.
 
-Other ones I used way less and will separate into three groups:
+### Other ones I used way less and will separate into three groups
 
-### Used in at least one project <a name="project"></a>
+#### Used in at least one project <a name="project"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
@@ -136,7 +136,7 @@ _[<small>(Back to the top)</small>](#me)_
 -   jQuery
 -   Objective-C
 
-### Played a little bit with <a name="played"></a>
+#### Played a little bit with <a name="played"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
@@ -147,7 +147,7 @@ _[<small>(Back to the top)</small>](#me)_
 -   Rust
 -   V (vlang.io)
 
-### Read about <a name="read-about"></a>
+#### Read about <a name="read-about"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
