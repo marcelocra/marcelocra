@@ -9,7 +9,7 @@ Software Designer and Developer 💎 Beautiful, clean code works better.
 -   ex-Googler
 -   Computer Engineer - ITA (Instituto Tecnológico de Aeronáutica) 🇧🇷
 
-**I quit Google to follow my entrepreneurship dreams.**
+**I quit Google to follow my entrepreneurship dreams. Will I go back one day? Who knows.**
 
 I share a bit of what I learned and am learning in this page, see TOC below (in
 English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese)
