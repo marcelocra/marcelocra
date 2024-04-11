@@ -34,6 +34,7 @@ _[Historic data](./details.md#github-stats-history)._
 -   [The most important things that I learned so far](#should-know)
 -   [Will I be replaced by AI?](#solid-foundations)
 -   [What technologies/languages have I worked with?](#tech)
+    -   [The ones that I used the most are](#used-the-most)
     -   [Used in at least one project](#project)
     -   [Played a little bit with](#played)
     -   [Read about](#read-about)
@@ -100,7 +101,7 @@ Here is a list of stuff that I consider very important:
 
 _[<small>(Back to the top)</small>](#me)_
 
-### The ones that I used the most are
+### The ones that I used the most are <a name="used-the-most"></a>
 
 -   JavaScript (React, Node.js)
 -   Python
