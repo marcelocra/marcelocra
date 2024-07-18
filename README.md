@@ -2,17 +2,19 @@
 
 Hello! 👋
 
-My name is Marcelo.
+My name is Marcelo and I'm a Software Developer!
 
-I'm proud to say that <strong><u style="text-underline-offset: 4px; text-decoration-thickness: 2px">I quit Google to follow my entrepreneurship dreams</u></strong>!
+I'm proud to say that <strong><u style="text-underline-offset: 4px; text-decoration-thickness: 2px">I quit Google to follow my entrepreneurship dreams</u></strong>.
 
-I'm a Software Developer and I believe that designing solutions even a little bit before actually coding them allows us to **produce better results, faster**.
+I believe that doing software design -not in a BDUF kind of way[^bduf]- before actually coding allows us to **produce better results, faster**.
 
-I also believe that **maintainability** is one of the **most important features of a codebase**, with readability good architecture and code readability playing a fundamental part in that.
+I also believe that **maintainability** is one of the **most important features of a codebase**, with good architecture and code readability playing a fundamental part.
 
-Now I'll list some coding stuff that I like and find interesting or useful, including projects that I created and maintain.
+Now I'll list some coding stuff that I like and find interesting or useful, including projects that I created.
 
 If you want to know more about me or get in touch, keep reading [below](#more). I also added some typical GitHub readme stats there 😆️.
+
+[^bduf]: Big Design Up Front is a software development methodology in which the software design is fully completed before any coding happens. It is not applicable in many (most?) software development contexts, particularly apps and websites. Relates to the Waterfall model.
 
 ## Useful, interesting, cool, coding stuff
 
