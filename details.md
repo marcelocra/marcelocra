@@ -1,26 +1,10 @@
 # More about me <a name="me"></a>
 
-## Marcelo Almeida
-
-_Think before coding._
-
-Software Designer and Developer 💎 Beautiful, clean code works better.
-
--   ex-Googler
--   Computer Engineer - ITA (Instituto Tecnológico de Aeronáutica) 🇧🇷
-
-**I quit Google to follow my entrepreneurship dreams. Will I go back one day? Who knows.**
-
-I share a bit of what I learned and am learning in this page, see TOC below (in
-English), [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese)
-and soon in my social pages (also in Portuguese, links in the profile).
-
-Cheers!\
-Marcelo.
+If you came directly here, most things are in [the README](./README.md), sorry! Please, take a look there `:D`.
 
 ## GitHub stats
 
-_[Historic data](./details.md#github-stats-history)._
+_[Historic data at the bottom](./details.md#github-stats-history)._
 
 <!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
@@ -31,47 +15,32 @@ _[Historic data](./details.md#github-stats-history)._
 
 ## Table of contents <a name="toc"></a>
 
--   [The most important things that I learned so far](#should-know)
--   [Will I be replaced by AI?](#solid-foundations)
--   [What technologies/languages have I worked with?](#tech)
-    -   [The ones that I used the most are](#used-the-most)
-    -   [Used in at least one project](#project)
-    -   [Played a little bit with](#played)
-    -   [Read about](#read-about)
--   [Projects](#projects)
--   [Appendix](#appendix)
-    -   [GitHub stats history](#github-stats-history)
+- [The most important things that I learned so far](#learnings)
+- [Will I be replaced by AI?](#solid-foundations)
+- [Technologies and languages I use or used](#tech)
+  - [Currently using](#using)
+  - [The ones that I used the most are](#used-the-most)
+  - [Used in at least one project](#project)
+  - [Played a little bit with](#played)
+  - [Read about](#read-about)
+- [Projects](#projects)
+- [Appendix](#appendix)
+  - [GitHub stats history](#github-stats-history)
 
-## The most important things that I learned so far <a name="should-know"></a>
+## The most important things that I learned so far <a name="learnings"></a>
 
--   Knowing technologies is **overrated**. With solid foundations you can learn
-    and master most technologies.
--   **BUT**... knowing technologies extremelly well is **underrated**. Being the
-    go-to person about anything is really good both for your career and yourself
-    (mentally).
--   **AND**... **some technologies are really bad**, particularly regarding
-    developer experience (DX). DX is one of the most important things to keep
-    you and other developers highly productive.
--   Thinking about a problem and its solution (architecture, design, etc) before
-    actually coding goes a long way towards maintainability.
--   Start with the problem, not the technology that you want to use. Unless, of
-    course, it is a toy project that you are using to learn something new.
--   **Bad communication** is the root of a HUGE number of problems. Really. Some
-    very basic stuff is:
-    1. Just because you sent a message or an email it doesn't mean that the
-       other person received it. Trust, but verify.
-    1. Sending a document to people in a Slack channel or email doesn't mean
-       that every stakeholder will read it. Check with them and make sure that
-       everyone is in sync.
-    1. Overcommunicating will almost ALWAYS be better than undercommunicating.
--   People **underestimate (a lot!) the power of good documentation**. It can
-    save hours of meetings and avoid having people as "single points of
-    failure". And it also helps with the bad communication problem: you can
-    always refer to the same doc that was written once and agreed upon, instead
-    of having to write the same messages or have the same meeting over and over.
-    Basically, DRY ("don't repeat yourself", a software development principle).
--   Automated testing is a MUST HAVE for any non-trivial projects.
--   Good UX is essential if you are serious about your project.
+- Knowing technologies is **overrated**. With solid foundations we can learn and master most technologies.
+- **BUT**... knowing technologies extremelly well is **underrated**. Being the go-to person about anything is really good both for us and our career
+- **AND**... **some technologies are really bad**, particularly regarding developer experience (DX). DX is really helpful in keeping us and our peers highly productive.
+- When solving a problem, choosing the appropriate architecture and doing some code design before actually coding help a lot in creating more maintainable software.
+- Usually, it is better to start with the problem and choose the technology based on its requirements. Otherwise we might end up bing the person with the hammer in that saying: "for someone that only has a hammer, everything looks like a nail". Sometimes the best tool for the job is not the one we want to use. (This does not apply for when we are learning something, of course.)
+- **Bad communication** is the root of a HUGE number of problems. Really. Basics:
+  1. Just because we sent a message or an email, doesn't mean they received/read it. We can use a simple chat message to double check.
+  1. Sending stuff to groups doesn't mean that every stakeholder will see/read it. Check with them too.
+  1. Overcommunicating will almost ALWAYS be better than undercommunicating.
+- People **underestimate (a lot!) the power of good documentation**. It can save hours of meetings and avoid having people as "single points of failure". And it also helps with the bad communication problem: we can always refer to the same doc that was reviewed instead of having to write the same messages or have the same meetings over and over again. Basically, documentation can help us use DRY ("don't repeat yourself", a software development principle) in communications.
+- Automated testing is a MUST HAVE for any non-trivial projects.
+- Good UX is essential if you are serious about your project.
 
 ## Will I be replaced by AI? <a name="solid-foundations"></a>
 
@@ -79,45 +48,50 @@ _[<small>(Back to the top)</small>](#me)_
 
 I have no idea! But I don't think so!
 
-I've been using both GitHub Copilot and ChatGPT to help me be more productive
-and think they are great at that!
+I've been using both GitHub Copilot and ChatGPT to help me be more productive and think they are great at that!
 
-I do believe that one needs solid foundations in order to employ these tools
-effectively. For example, how will I know that the AI gave me a good algorithmic solution
-for a problem if I don't understand what the bound are?
+I do believe that one needs solid foundations in order to employ these tools effectively. For example, how will I know that the AI gave me a good algorithmic solution for a problem if I don't understand what the bound are?
 
 Here is a list of stuff that I consider very important:
 
--   algorithms and data structures
--   software design and architecture
--   programming logic
--   testing
--   documentation
--   code review
--   great communication
--   great UI and UX
+- algorithms and data structures
+- software design and architecture
+- programming logic
+- testing
+- documentation
+- code review
+- great communication
+- great UI and UX
 
-## What technologies/languages have I worked with? <a name="tech"></a>
+## Technologies and languages I use or used <a name="tech"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
+### Currently using <a name="using"></a>
+
+- JavaScript and TypeScript
+- Astro
+- Tailwind CSS
+- DaisyUI
+- Clojure and ClojureScript
+
 ### The ones that I used the most are <a name="used-the-most"></a>
 
--   JavaScript (React, Node.js)
--   Python
--   C++
--   Protocol Buffers
--   HTML/CSS
--   TypeScript
--   Vim
--   VSCode
--   Bazel (build system)
--   [Bash](https://www.youtube.com/watch?v=umDr0mPuyQc)
--   Java
--   REST (for APIs and databases - think CRUD)
--   SQL/NoSQL
+- JavaScript (React, Node.js)
+- Python
+- C++
+- Protocol Buffers
+- HTML/CSS
+- TypeScript
+- Vim
+- VSCode
+- Bazel (build system)
+- [Bash](https://www.youtube.com/watch?v=umDr0mPuyQc)
+- Java
+- REST (for APIs and databases - think CRUD)
+- SQL/NoSQL
 
-There's more, probably.
+There's more, probably...
 
 ### Other ones I used way less and will separate into three groups
 
@@ -125,45 +99,43 @@ There's more, probably.
 
 _[<small>(Back to the top)</small>](#me)_
 
--   Svelte
--   Astro
--   Tailwind CSS
--   Deno
--   Next.js
--   ClojureScript
--   Go
--   Tachyons CSS
--   Bulma CSS
--   jQuery
--   Objective-C
+- Svelte
+- Deno
+- Next.js
+- Go
+- Tachyons CSS
+- Bulma CSS
+- jQuery
+- Objective-C
 
 #### Played a little bit with <a name="played"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
--   Dart and Flutter
--   F#
--   Ruby (and Rails)
--   Elm
--   Rust
--   V (vlang.io)
+- Dart and Flutter
+- F#
+- Ruby (and Rails)
+- Elm
+- Rust
+- V (vlang.io)
 
 #### Read about <a name="read-about"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
--   Haskell
--   Unison
--   Ocaml
--   Erlang
--   Elixir
+- Haskell
+- Unison
+- OCaml
+- Erlang
+- Elixir
+- Gleam
+- Lua
 
 ## Projects <a name="projects"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
-Currently, take a look at the highlighted ones at the
-[main page](https://github.com/marcelocra).
+Currently, take a look at the pinned ones at the [main page](https://github.com/marcelocra).
 
 ## Appendix <a name="appendix"></a>
 
@@ -171,6 +143,10 @@ Currently, take a look at the highlighted ones at the
 
 <details>
 <summary>Saving historic data just to see how things change over time.</summary>
+
+#### Jul 18, 2024, 11:43:23
+
+![Screenshot from 2024-07-18 11-43-23](./images/github-stats/Screenshot%20from%202024-07-18%2011-43-23.png)
 
 #### Feb 16, 2024, 00:37:36
 
