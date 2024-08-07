@@ -10,7 +10,7 @@ I believe that doing software design — not in a BDUF[^bduf] kind of way — be
 
 I also believe that **maintainability** is one of the **most important features of a codebase**, with good architecture and code readability playing a fundamental part.
 
-Now I'll list some coding stuff that I like and find interesting or useful, including projects that I created.
+Now I'll list some coding stuff that I like and are interesting or useful, including projects that I created.
 
 If you want to know more about me or get in touch, keep reading [below](#more). I also added some typical GitHub readme stats there 😆️.
 
