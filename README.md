@@ -1,6 +1,6 @@
-## Elevator pitch
+## Marcelo who? 🃏
 
-Hello! 👋
+Hello! 👋🏽
 
 My name is Marcelo and I'm a Software Developer!
 
