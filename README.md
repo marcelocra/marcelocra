@@ -1,4 +1,4 @@
-## Marcelo who? 🃏
+## Marcelo who?
 
 Hello! 👋🏽
 
