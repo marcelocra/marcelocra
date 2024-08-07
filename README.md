@@ -16,33 +16,33 @@ If you want to know more about me or get in touch, keep reading [below](#more). 
 
 [^bduf]: Big Design Up Front is a software development methodology in which the software design is fully completed before any coding happens. It is not applicable in many (most?) software development contexts, particularly apps and websites. Relates to the Waterfall model.
 
-## Useful, interesting, cool, coding stuff
+## {Useful,Interesting,Cool} coding stuff
 
 #### Technologies
 
-- [Astro](https://astro.build): I created my website using [Astro](https://astro.build) (it is in the **site** repo, pinned below). It is a full-stack framework and defaults to generating static sites that are VERY fast.
+- [Astro](https://astro.build): it is a full-stack web framework that defaults to generating VERY fast static sites, with great Lighthoust/Speedtest results. I created my website using it (the **site** repo pinned below).
 
   Good performance means better user experinece, and it should always be one of our focuses.
 
-- [Tailwind CSS](https://tailwindcss.com/): great, productive, alternative to writing pure CSS.
-- [Daisy UI](https://daisyui.com/): Tailwind plugin with many beautiful styles for frequently used components (button, tooltip, etc).
+- [Tailwind CSS](https://tailwindcss.com/): a great alternative to writing pure CSS. It is easy to learn, use, has great developer experience, and help us produce beautiful websites, quickly.
+- [Daisy UI](https://daisyui.com/): Tailwind plugin with beautiful styles for frequently used components (button, tooltip, etc).
 - [clsx](https://github.com/lukeed/clsx): great helper for writing conditional CSS/Tailwind classes.
-- [Deno](https://deno.land): JavaScript and TypeScript runtime with very interesting features.
+- [Deno](https://deno.land): JavaScript and TypeScript runtime with very interesting features, e.g. a fine-grained permission system, npm support, no `node_modules`, etc. Can be used as a replacement for Node in many cases. Pair well with [Deno Deploy](https://deno.com/deploy).
 
-- [Clojure](https://clojure.org): amazing language for people that are not allergic to parethesis haha.
-- [Babashka](https://github.com/babashka/babashka): use Clojure to write scripts without the JVM startup penalty.
-- [nbb](https://github.com/babashka/nbb): write ClojureScript that is executed directly in code, without a compilation step.
+- [Clojure](https://clojure.org): amazing language for people that are not allergic to parethesis hahaha.
+- [Babashka](https://github.com/babashka/babashka): an alternative Clojure installation/runtime for running Clojure code without the JVM startup penalty.
+- [nbb](https://github.com/babashka/nbb): Babashka for Node. An alternative ClojureScript installation/runtime for running ClojureScript code without a compilation step.
 
 #### Code references
 
-- [Google Closure Keyboard Shortcut Handler example](https://gist.github.com/marcelocra/930fc699e3b6367df1aad81811668e3c): works in JavaScript too, even though the example is in ClojureScript.
-- [ClojureScript nbb example script](https://gist.github.com/marcelocra/0f41381c0c1e251efe700a1c3bb0e3fa).
+- [Google Closure Keyboard Shortcut Handler example](https://gist.github.com/marcelocra/930fc699e3b6367df1aad81811668e3c): an example of how to create a simple Keyboard handler. Works in JavaScript too, even though the example is in ClojureScript.
+- [ClojureScript nbb example script](https://gist.github.com/marcelocra/0f41381c0c1e251efe700a1c3bb0e3fa): an example nbb script from the creator or nbb. (The link is to my fork of it.)
 
 #### Tech interview references
 
-I haven't used all references mentioned here. This is a sort of "bookmark" with stuff that seems good and that I intend to use.
+(Disclaimer: I haven't used all references mentioned here. In each section I mention which ones I actually used.)
 
-- [Cracking the coding interview](https://www.amazon.com.br/Cracking-Coding-Interview-Programming-Questions/dp/0984782850): great book that helped me pass Google interviews.
+- [Cracking the coding interview](https://www.amazon.com.br/Cracking-Coding-Interview-Programming-Questions/dp/0984782850): great book that helped me pass Google interviews. It was the 4th edition back then, I think, and I completed most of it, especially the exercises.
 
 - [Tech interview cheat sheet](https://github.com/tsiege/Tech-Interview-Cheat-Sheet)
 
@@ -53,24 +53,26 @@ I haven't used all references mentioned here. This is a sort of "bookmark" with 
 
 ## About me <a name="more"></a>
 
-- I completed my Computer Engineering undergrad at **ITA** (Instituto Tecnológico de Aeronáutica), one of Brazil's most renowned engineering schools, from 2010 to 2015. 🇧🇷
-- During that time, I studied one year abroad, in The Netherlands 🇳🇱, attending both TU/e (Eindhoven University of Technology) and UT (University of Twente).
-- I worked at **Google** as an intern for 6 months in 2015 and as a full time developer from 2016 to 2020.
-- I worked at startups after 2020, until **deciding to create my own company**.
-- I have **15<!-- (curr_year - 2010 + 1) -->+ years** of coding experience. Wrote my **first line of code** in C, in 2010.
+- I completed my Computer Engineering undergrad at **ITA** (Instituto Tecnológico de Aeronáutica), one of Brazil's 🇧🇷 most renowned engineering schools. It was from 2010 to 2015, with one year exchange program in...
+- The Netherlands 🇳🇱, attending to TU/e (Eindhoven University of Technology) and UT (University of Twente).
+- I worked at **Google** as an intern for 6 months in 2015[^internship2015] and as a full time developer from 2016 to 2020[^fte].
+- I worked at startups after 2020[^startups], until **deciding to create my own company**.
+- I have **15<!-- (curr_year - 2010 + 1) -->+ years** of coding experience! My **first line of code** was in C, in 2010.
 
-Check some of my projects [below](#projects).
+[^internship2015]: I worked mostly with iOS apps, writing a lot of Objective-C. Also wrote some Python and used [Bazel](https://bazel.build).
+[^fte]: Wrote mainly C++, but also Python, Java, JavaScript and some Shell.
+[^startups]: Worked mostly with JavaScript/TypeScript, React and Node.
 
-Also, I share a little bit of what I learned and am learning <a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#table-of-contents-" target="_blank">here</a> (in English) and [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese).
+You can check a few of my projects [below](#projects), some stuff I learned and am learning <a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#table-of-contents-" target="_blank">in this essay</a> (in English) or [in my blog](https://marcelocra.dev/blog) (in Brazilian Portuguese).
 
-You can check my social pages (linked in the profile) if you want to get in touch.
+My social pages are linked in the profile, if you want to get in touch.
 
 Cheers!\
 Marcelo.
 
 ## My projects <a name="projects"></a>
 
-Currently (18jul2024), my pinned repos show some of my relevant public projects. Not everything fit there, as GitHub only allows 6 pinned repos, so I list more stuff at my website and CV (want to bring some here eventually).
+Currently, Jul 18, 2024, my pinned repos show some of my projects. Not everything fits, as GitHub only allows 6 pinned repos, so I try to list more at my website or CV.
 
 ## Some stats <a name="stats"></a>
 
