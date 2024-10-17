@@ -1,14 +1,14 @@
-## Marcelo who?
-
-Hello! 👋🏽
+## Hello! 👋🏽
 
 My name is Marcelo and I'm a Software Developer!
 
-I'm proud to say that <strong><u style="text-underline-offset: 4px; text-decoration-thickness: 2px">I quit Google to follow my entrepreneurship dreams</u></strong>.
+I <strong><u style="text-underline-offset: 4px; text-decoration-thickness: 2px">quit Google to follow my entrepreneurship dreams</u></strong>.
 
-I believe that doing software design — not in a BDUF[^bduf] kind of way — before actually coding allows us to **produce better results, faster**.
+I really enjoy programming and am constantly — almost every day — learning more about it and practicing.
 
-I also believe that **maintainability** is one of the **most important features of a codebase**, with good architecture and code readability playing a fundamental part.
+I believe that thinking even a little bit about what we are going to code before actually coding it usually allows us to **produce better results, faster**. In other words, doing some software design — but not in a BDUF[^bduf] kind of way — can help us a lot.
+
+I also believe that **maintainability** is one of the (if not the) **most important features of a codebase**. Code architecture and readability play fundamental parts.
 
 Now I'll list some coding stuff that I like and are interesting or useful, including projects that I created.
 
