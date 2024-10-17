@@ -10,7 +10,7 @@ I believe that thinking even a little bit about what we are going to code before
 
 I also believe that **maintainability** is one of the (if not the) **most important features of a codebase**. Code architecture and readability play fundamental parts.
 
-Now I'll list some coding stuff that I like and are interesting or useful, including projects that I created.
+Now I'll list some coding stuff that I like and find interesting or useful, including projects that I created.
 
 If you want to know more about me or get in touch, keep reading [below](#more). I also added some typical GitHub readme stats there 😆️.
 
