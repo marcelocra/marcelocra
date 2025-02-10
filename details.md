@@ -142,6 +142,14 @@ Currently, take a look at the pinned ones at the [main page](https://github.com/
 <details>
 <summary>Saving historic data just to see how things change over time.</summary>
 
+<br />
+
+It is incredible how much s\*\*t happened and how life changed between each of these screenshots.
+
+#### Feb 10, 2025, 02:36:32
+
+![Screenshot from 2025-02-10 02-36-32](./images/github-stats/Screenshot%20from%202025-02-10%2002-36-32.png)
+
 #### Jul 18, 2024, 11:43:23
 
 ![Screenshot from 2024-07-18 11-43-23](./images/github-stats/Screenshot%20from%202024-07-18%2011-43-23.png)
