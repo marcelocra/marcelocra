@@ -1,4 +1,4 @@
-# More about me <a name="me"></a>
+# Details: Learnings, Technologies, Projects
 
 If you came directly here, most things are in [the README](./README.md), sorry! Please, take a look there `:D`.
 
@@ -6,12 +6,10 @@ If you came directly here, most things are in [the README](./README.md), sorry! 
 
 _[Historic data at the bottom](./details.md#github-stats-history)._
 
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
-
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
-
-| <img align="center" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="marcelocra's github stats" /> | <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=buefy&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=20" /> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+<div style="display: flex; align-items: center; gap: 3px; height: 240px;">
+  <img style="height: 100%" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true" alt="marcelocra's github stats" />
+  <img  style="height: 100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=tokyonight&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=8"  alt="marcelocra's most used languages" />
+</div>
 
 ## Table of contents <a name="toc"></a>
 
