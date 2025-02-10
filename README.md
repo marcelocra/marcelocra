@@ -20,8 +20,8 @@ My social pages are linked in the profile, but the fastest way to reach me is by
 Cheers!\
 Marcelo.
 
-<small>P.S.: I added some typical GitHub readme stats, just because they are fun! 😆️</small>\
-<small>P.S.2: My pinned repos show some of my projects. GitHub only allows 6, so I'll list more above, or at my website and CV.</small>
+<sub>P.S.: I added some typical GitHub readme stats, just because they are fun! 😆️</sub>\
+<sub>P.S.2: My pinned repos show some of my projects. GitHub only allows 6, so I'll list more above, or at my website and CV.</sub>
 
 [^bduf]: Big Design Up Front is a software development methodology in which the software design is fully completed before any coding happens. It is not applicable in many (most?) software development contexts, particularly apps and websites. Relates to the Waterfall model.
 
@@ -29,15 +29,9 @@ Marcelo.
 
 _<a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#github-stats-history-" target="_blank">Historic data</a>_
 
-<!-- ----- 80 columns reference ----------------------------------------------------- -->
-
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&text_color=000&title_color=000&bg_color=45,e96443,904e95&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
-
-<!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
-
-<div style="display: flex; align-items: center; height: 240px;">
-  <img height="240" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=aura&hide_border=true" alt="marcelocra's github stats" />
-  <img height="240" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=aura&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=8"  alt="marcelocra's most used languages" />
+<div>
+  <img src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=aura&hide_border=true" alt="marcelocra's github stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=aura&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=8"  alt="marcelocra's most used languages" />
 </div>
 
 <br />
@@ -46,14 +40,14 @@ _<a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#github
 <summary>FYI: I'm ignoring some languages. Click here to see why.</summary>
 <br />
 
-1. They are not languages: HTML, CSS, Dockerfile, <small>Vimscript and Shell (haha)</small>.
+1. They are not languages: HTML, CSS, Dockerfile, <sub>Vimscript and Shell (haha)</sub>.
 1. I haven't used them meaningfully for a long time now: Python, Java, C, C++.
 1. I use them mostly as "glue" and not to write real programs: Shell (mostly Bash), PowerShell, Vimscript.
 
 <details>
 <summary>If you want to see the default list, click here.</summary>
 <br />
-<img style="width: 40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&langs_count=12" />
+<img style="width: 40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&layout=compact&langs_count=12" />
 </details>
 
 </details>
