@@ -1,6 +1,6 @@
 ## Hello and Welcome! 👋🏽
 
-My name is Marcelo, I'm a **Computer Engineer** from @ita, a Xoogler (ex-@google), a **full-stack programmer** with **16<!-- (curr_year - 2010 + 1) -->+ years** of experience, and an **entrepreneur**!
+My name is Marcelo, I'm a **Computer Engineer** from **ITA**, a Xoogler (ex-**Google**), a **full-stack programmer** with **16<!-- (curr_year - 2010 + 1) -->+ years** of experience, and an **entrepreneur**!
 
 I worked for **4,5 years at Google** and **quit to follow my entrepreneurship dreams**.
 
@@ -36,8 +36,8 @@ _<a href="https://github.com/marcelocra/marcelocra/blob/master/details.md#github
 <!-- ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&theme=dark&hide_border=true&layout=compact&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile&langs_count=10) -->
 
 <div style="display: flex; align-items: center; height: 240px;">
-  <img style="height: 100%" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true" alt="marcelocra's github stats" />
-  <img  style="height: 100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=tokyonight&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=8"  alt="marcelocra's most used languages" />
+  <img height="240" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=aura&hide_border=true" alt="marcelocra's github stats" />
+  <img height="240" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=aura&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=8"  alt="marcelocra's most used languages" />
 </div>
 
 <br />
