@@ -1,8 +1,8 @@
 ## Hello and Welcome! 👋🏽
 
-My name is Marcelo, I'm a **Computer Engineer** from **ITA**, a Xoogler (ex-**Google**), a **full-stack programmer** with **16<!-- (curr_year - 2010 + 1) -->+ years** of experience, and an **entrepreneur**!
+My name is Marcelo, I'm a **Computer Engineer** from **ITA**, a Xoogler (ex-**Google**), a **full-stack programmer** with **16<!-- (curr_year - 2010 + 1) -->+ years** of experience, and an **entrepreneur**.
 
-I worked **at Google for 4,5 years** and **quit to follow my entrepreneurship dreams**.
+I worked **at Google for 4,5 years** and **quit to try something different :)**.
 
 I wrote my **first line of code in 2010**, in C. Then I learned Java, Python, JavaScript, and more. Today I work mostly with JavaScript and TypeScript, Astro, HTML, Tailwind CSS, and F#. For the full list, including A LOT of stuff (even weird tech haha), read more.
 
