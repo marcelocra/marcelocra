@@ -4,17 +4,17 @@ If you came directly here, most things are in [the README](./README.md), sorry! 
 
 ## GitHub stats
 
-_[Historic data at the bottom](./details.md#github-stats-history)._
+_[Historic data at the bottom](#github-stats-history)._
 
 <div style="display: flex; align-items: center; gap: 3px; height: 240px;">
   <img style="height: 100%" src="https://github-readme-stats.vercel.app/api?username=marcelocra&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true" alt="marcelocra's github stats" />
   <img  style="height: 100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcelocra&layout=compact&theme=tokyonight&hide_border=true&hide=Python,Java,html,CSS,C,Shell,PowerShell,Vim%20Script,Dockerfile,SCSS&langs_count=8"  alt="marcelocra's most used languages" />
 </div>
 
-## Table of contents <a name="toc"></a>
+## Table of contents <a name="toc"></a> <a name="table-of-contents"></a>
 
 - [The most important things that I learned so far](#learnings)
-- [Will I be replaced by AI?](#solid-foundations)
+- [Will we be replaced by AI?](#solid-foundations)
 - [Technologies and languages I use or used](#tech)
   - [Currently using](#using)
   - [The ones that I used the most are](#used-the-most)
@@ -40,7 +40,7 @@ _[Historic data at the bottom](./details.md#github-stats-history)._
 - Automated testing is a MUST HAVE for any non-trivial projects.
 - Good UX is essential if you are serious about your project.
 
-## Will I be replaced by AI? <a name="solid-foundations"></a>
+## Will we be replaced by AI? <a name="solid-foundations"></a>
 
 _[<small>(Back to the top)</small>](#me)_
 
