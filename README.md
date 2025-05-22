@@ -15,5 +15,6 @@ TODO _(this is for me!)_:
 
 - [ ] List my open source projects
 - [ ] List other people's interesting projects
+  - some can be found [here](./references.md)
 - [ ] Add ways for people to sponsor my work
 
