@@ -11,8 +11,9 @@ I'm rewriting this readme. Until it's ready, you can:
   - in [Brazilian Portuguese](https://marcelocra.dev/blog)
 - See **my pinned repos** below, they **are full of useful stuff**!
 
+
 <details>
-  <summary>TODO: <sup><sup>_(this is for me!)_</sup></sup></summary>
+  <summary><b>TODO <sub><sup><i>(for me)</i></sup></sub></b></summary>
  
 - [ ] List my open source projects
 - [ ] List other people's interesting projects
