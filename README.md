@@ -11,8 +11,9 @@ I'm rewriting this readme. Until it's ready, you can:
   - in [Brazilian Portuguese](https://marcelocra.dev/blog)
 - See **my pinned repos** below, they **are full of useful stuff**!
 
-TODO _(this is for me!)_:
-
+<details>
+  <summary>TODO: <sup><sup>_(this is for me!)_</sup></sup></summary>
+ 
 - [ ] List my open source projects
 - [ ] List other people's interesting projects
   - some can be found [here](./references.md)
@@ -21,3 +22,6 @@ TODO _(this is for me!)_:
   - patreon
   - paypal
   - stripe?
+
+</details>
+
