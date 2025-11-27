@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marcelo.land - TV Portal MVP v2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ========================================
+       CSS CUSTOM PROPERTIES (Design Tokens)
+       ======================================== */
+      :root {
+        /* Colors - Dark Theme (default) */
+        --void-black: #0a0a0f;
+        --crt-glow: #00ffe0;
+        --portal-purple: #6b21a8;
+        --signal-white: #f0f0f5;
+        --static-gray: #2a2a35;
+        --retro-amber: #ffb800;
+        --matrix-green: #00ff41;
+        --error-red: #ff3366;
+        --vhs-blue: #0066ff;
+
+        /* Semantic Colors */
+        --bg-primary: var(--void-black);
+        --bg-secondary: var(--static-gray);
+        --text-primary: var(--signal-white);
+        --text-secondary: rgba(240, 240, 245, 0.7);
+        --accent-primary: var(--crt-glow);
+        --accent-secondary: var(--portal-purple);
+
+        /* Typography */
+        --font-display: "Space Grotesk", system-ui, sans-serif;
+        --font-mono: "JetBrains Mono", monospace;
+        --font-pixel: "Press Start 2P", monospace;
+
+        /* Spacing */
+        --space-xs: 4px;
+        --space-sm: 8px;
+        --space-md: 16px;
+        --space-lg: 24px;
+        --space-xl: 32px;
+        --space-2xl: 48px;
+
+        /* Transitions */
+        --transition-fast: 150ms ease;
+        --transition-normal: 300ms ease;
+        --transition-slow: 500ms ease;
+
+        /* Effects */
+        --glow-primary: 0 0 20px var(--crt-glow);
+        --glow-secondary: 0 0 15px var(--portal-purple);
+      }
+
+      /* Light Theme */
+      [data-theme="light"] {
+        --bg-primary: #f5f5f7;
+        --bg-secondary: #e5e5e7;
+        --text-primary: #1a1a1f;
+        --text-secondary: rgba(26, 26, 31, 0.7);
+        --accent-primary: #0088aa;
+        --accent-secondary: #8b5cf6;
+      }
+
+      /* ========================================
+       RESET & BASE STYLES
+       ======================================== */
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-display);
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        min-height: 100vh;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Reduce motion for accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* ========================================
+       TV CONTAINER & HERO
+       ======================================== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--space-lg);
+        position: relative;
+        background: radial-gradient(
+            ellipse at center,
+            rgba(107, 33, 168, 0.1) 0%,
+            transparent 70%
+          ),
+          var(--bg-primary);
+      }
+
+      .tv-container {
+        perspective: 1000px;
+        max-width: 100%;
+      }
+
+      .tv {
+        width: min(600px, 90vw);
+        background: linear-gradient(145deg, #3a3a3a 0%, #1a1a1a 100%);
+        border-radius: 20px;
+        padding: clamp(20px, 5vw, 40px);
+        transform: rotateX(2deg);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5),
+          inset 0 2px 0 rgba(255, 255, 255, 0.1);
+        position: relative;
+      }
+
+      /* TV Stand */
+      .tv::before {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 40px;
+        background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .tv::after {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 20px;
+        background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+        border-radius: 0 0 5px 5px;
+      }
+
+      /* Screen */
+      .screen {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background: #000;
+        border-radius: 15px 15px 15px 15px / 50px 50px 15px 15px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: inset 0 0 50px rgba(0, 255, 224, 0.1),
+          0 0 20px rgba(0, 255, 224, 0.2);
+      }
+
+      /* CRT Scan Lines */
+      .screen::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.15) 0px,
+          rgba(0, 0, 0, 0.15) 1px,
+          transparent 1px,
+          transparent 2px
+        );
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      /* CRT Flicker Effect */
+      .screen::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.03);
+        pointer-events: none;
+        z-index: 11;
+        animation: flicker 0.15s infinite;
+      }
+
+      @keyframes flicker {
+        0%,
+        100% {
+          opacity: 0.03;
+        }
+        50% {
+          opacity: 0.01;
+        }
+      }
+
+      /* Screen Content */
+      .screen-content {
+        padding: clamp(15px, 4vw, 30px);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-mono);
+        position: relative;
+        z-index: 1;
+        transition: opacity var(--transition-fast);
+      }
+
+      .screen-content.switching {
+        opacity: 0;
+      }
+
+      /* Channel Content Sections */
+      .channel-content {
+        display: none;
+        height: 100%;
+        flex-direction: column;
+      }
+
+      .channel-content.active {
+        display: flex;
+      }
+
+      /* Channel Indicator */
+      .channel-indicator {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: clamp(10px, 2vw, 14px);
+        color: var(--crt-glow);
+        text-shadow: var(--glow-primary);
+        font-family: var(--font-mono);
+        z-index: 5;
+      }
+
+      /* Static Effect */
+      .static-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+        opacity: 0;
+        pointer-events: none;
+        z-index: 20;
+        transition: opacity 100ms;
+      }
+
+      .static-overlay.active {
+        opacity: 0.3;
+        animation: static 50ms steps(10) infinite;
+      }
+
+      @keyframes static {
+        0% {
+          transform: translate(0, 0);
+        }
+        10% {
+          transform: translate(-5%, -5%);
+        }
+        20% {
+          transform: translate(5%, 5%);
+        }
+        30% {
+          transform: translate(-5%, 5%);
+        }
+        40% {
+          transform: translate(5%, -5%);
+        }
+        50% {
+          transform: translate(-5%, 0);
+        }
+        60% {
+          transform: translate(5%, 0);
+        }
+        70% {
+          transform: translate(0, 5%);
+        }
+        80% {
+          transform: translate(0, -5%);
+        }
+        90% {
+          transform: translate(5%, 5%);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      /* ========================================
+       CHANNEL STYLES
+       ======================================== */
+
+      /* Home Channel */
+      .home-content {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .title {
+        font-size: clamp(18px, 4vw, 28px);
+        color: var(--crt-glow);
+        text-shadow: var(--glow-primary);
+        margin-bottom: var(--space-sm);
+        font-weight: 700;
+      }
+
+      .subtitle {
+        font-size: clamp(12px, 2.5vw, 16px);
+        color: var(--text-primary);
+        opacity: 0.9;
+      }
+
+      .tagline {
+        font-size: clamp(10px, 2vw, 14px);
+        color: var(--retro-amber);
+        margin-top: var(--space-md);
+      }
+
+      .cta {
+        margin-top: var(--space-lg);
+        font-size: clamp(8px, 1.5vw, 12px);
+        color: var(--text-secondary);
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 0.7;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      /* About Channel */
+      .about-content {
+        padding-top: var(--space-xl);
+      }
+
+      .bio-section {
+        display: flex;
+        gap: var(--space-md);
+        align-items: flex-start;
+      }
+
+      .bio-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--crt-glow),
+          var(--portal-purple)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        flex-shrink: 0;
+      }
+
+      .bio-text h2 {
+        font-size: clamp(14px, 3vw, 18px);
+        color: var(--crt-glow);
+        margin-bottom: var(--space-xs);
+      }
+
+      .bio-text p {
+        font-size: clamp(10px, 2vw, 12px);
+        color: var(--text-secondary);
+        line-height: 1.5;
+      }
+
+      .highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+        margin-top: var(--space-md);
+      }
+
+      .highlight-tag {
+        background: var(--bg-secondary);
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: 4px;
+        font-size: clamp(8px, 1.5vw, 10px);
+        color: var(--crt-glow);
+        border: 1px solid rgba(0, 255, 224, 0.2);
+      }
+
+      /* Projects Channel */
+      .projects-content {
+        padding-top: var(--space-xl);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+        margin-top: var(--space-md);
+      }
+
+      .project-card {
+        background: rgba(42, 42, 53, 0.5);
+        padding: var(--space-sm);
+        border-radius: 8px;
+        border: 1px solid rgba(0, 255, 224, 0.1);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+      }
+
+      .project-card:hover {
+        border-color: var(--crt-glow);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 255, 224, 0.2);
+      }
+
+      .project-card h3 {
+        font-size: clamp(10px, 2vw, 12px);
+        color: var(--crt-glow);
+        margin-bottom: var(--space-xs);
+      }
+
+      .project-card p {
+        font-size: clamp(8px, 1.5vw, 10px);
+        color: var(--text-secondary);
+      }
+
+      .project-tag {
+        display: inline-block;
+        font-size: 8px;
+        padding: 2px 6px;
+        background: var(--portal-purple);
+        color: white;
+        border-radius: 3px;
+        margin-top: var(--space-xs);
+      }
+
+      /* Contact Channel */
+      .contact-content {
+        padding-top: var(--space-xl);
+        justify-content: center;
+      }
+
+      .contact-content h2 {
+        font-size: clamp(14px, 3vw, 18px);
+        color: var(--crt-glow);
+        margin-bottom: var(--space-md);
+        text-align: center;
+      }
+
+      .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+
+      .contact-link {
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+        padding: var(--space-sm) var(--space-md);
+        background: rgba(42, 42, 53, 0.5);
+        border-radius: 8px;
+        color: var(--text-primary);
+        text-decoration: none;
+        font-size: clamp(10px, 2vw, 12px);
+        border: 1px solid transparent;
+        transition: all var(--transition-fast);
+      }
+
+      .contact-link:hover {
+        border-color: var(--crt-glow);
+        color: var(--crt-glow);
+      }
+
+      .contact-link span:first-child {
+        font-size: 16px;
+      }
+
+      /* ========================================
+       TV CONTROLS
+       ======================================== */
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: var(--space-lg);
+        padding: 0 var(--space-sm);
+      }
+
+      .channel-buttons {
+        display: flex;
+        gap: var(--space-sm);
+        flex-wrap: wrap;
+      }
+
+      .channel-btn {
+        width: clamp(32px, 8vw, 40px);
+        height: clamp(32px, 8vw, 40px);
+        border-radius: 50%;
+        border: none;
+        background: var(--static-gray);
+        color: var(--signal-white);
+        font-size: clamp(10px, 2vw, 12px);
+        font-family: var(--font-mono);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        position: relative;
+      }
+
+      .channel-btn:hover {
+        background: var(--crt-glow);
+        color: var(--void-black);
+        box-shadow: var(--glow-primary);
+      }
+
+      .channel-btn.active {
+        background: var(--crt-glow);
+        color: var(--void-black);
+      }
+
+      .channel-btn::after {
+        content: attr(data-label);
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8px;
+        color: var(--text-secondary);
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity var(--transition-fast);
+      }
+
+      .channel-btn:hover::after {
+        opacity: 1;
+      }
+
+      .control-buttons {
+        display: flex;
+        gap: var(--space-sm);
+      }
+
+      .power-btn {
+        width: clamp(40px, 10vw, 50px);
+        height: clamp(40px, 10vw, 50px);
+        border-radius: 50%;
+        border: none;
+        background: var(--error-red);
+        color: white;
+        font-size: clamp(10px, 2vw, 14px);
+        font-family: var(--font-mono);
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+        transition: all var(--transition-fast);
+      }
+
+      .power-btn:hover {
+        transform: scale(1.1);
+      }
+
+      .theme-btn {
+        width: clamp(32px, 8vw, 40px);
+        height: clamp(32px, 8vw, 40px);
+        border-radius: 50%;
+        border: none;
+        background: var(--static-gray);
+        color: var(--retro-amber);
+        font-size: 16px;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+      }
+
+      .theme-btn:hover {
+        background: var(--retro-amber);
+        color: var(--void-black);
+      }
+
+      .mute-btn {
+        width: clamp(32px, 8vw, 40px);
+        height: clamp(32px, 8vw, 40px);
+        border-radius: 50%;
+        border: none;
+        background: var(--static-gray);
+        color: var(--signal-white);
+        font-size: 14px;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+      }
+
+      .mute-btn:hover {
+        background: var(--vhs-blue);
+      }
+
+      .mute-btn.muted {
+        color: var(--error-red);
+      }
+
+      /* Brand */
+      .brand {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(8px, 1.5vw, 10px);
+        color: #555;
+        letter-spacing: 2px;
+        font-family: var(--font-display);
+      }
+
+      /* ========================================
+       SCROLL CONTENT (Below TV)
+       ======================================== */
+      .scroll-indicator {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-xs);
+        color: var(--text-secondary);
+        font-size: 12px;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(10px);
+        }
+      }
+
+      .scroll-indicator span {
+        font-size: 20px;
+      }
+
+      /* ========================================
+       EASTER EGG STYLES
+       ======================================== */
+
+      /* Disco Mode */
+      .disco-mode {
+        animation: disco 0.5s infinite;
+      }
+
+      @keyframes disco {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        25% {
+          filter: hue-rotate(90deg);
+        }
+        50% {
+          filter: hue-rotate(180deg);
+        }
+        75% {
+          filter: hue-rotate(270deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      .disco-ball {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 60px;
+        animation: spin 2s linear infinite;
+        z-index: 1000;
+        display: none;
+      }
+
+      .disco-ball.active {
+        display: block;
+      }
+
+      @keyframes spin {
+        from {
+          transform: translateX(-50%) rotate(0deg);
+        }
+        to {
+          transform: translateX(-50%) rotate(360deg);
+        }
+      }
+
+      /* Matrix Mode */
+      .matrix-mode .title,
+      .matrix-mode .subtitle,
+      .matrix-mode .tagline,
+      .matrix-mode h2,
+      .matrix-mode h3,
+      .matrix-mode p {
+        color: var(--matrix-green) !important;
+        text-shadow: 0 0 10px var(--matrix-green) !important;
+      }
+
+      /* Retro Mode */
+      .retro-mode {
+        font-family: var(--font-pixel) !important;
+        image-rendering: pixelated;
+      }
+
+      .retro-mode * {
+        font-family: var(--font-pixel) !important;
+      }
+
+      /* Toast Notifications */
+      .toast {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: var(--static-gray);
+        color: var(--crt-glow);
+        padding: var(--space-md) var(--space-xl);
+        border-radius: 8px;
+        font-family: var(--font-mono);
+        font-size: 14px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--crt-glow);
+        z-index: 1000;
+        opacity: 0;
+        transition: all var(--transition-normal);
+      }
+
+      .toast.show {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
+      /* ========================================
+       RESPONSIVE ADJUSTMENTS
+       ======================================== */
+      @media (max-width: 480px) {
+        .tv {
+          border-radius: 15px;
+        }
+
+        .tv::before {
+          width: 100px;
+          height: 25px;
+          bottom: -20px;
+        }
+
+        .tv::after {
+          width: 160px;
+          height: 15px;
+          bottom: -35px;
+        }
+
+        .controls {
+          flex-direction: column;
+          gap: var(--space-md);
+        }
+
+        .channel-buttons {
+          justify-content: center;
+        }
+
+        .control-buttons {
+          justify-content: center;
+        }
+
+        .bio-section {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Disco Ball (Easter Egg) -->
+    <div class="disco-ball" id="discoBall">🪩</div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Hero Section with TV -->
+    <section class="hero">
+      <div class="tv-container">
+        <div class="tv" id="tv">
+          <div class="screen">
+            <!-- Static Overlay -->
+            <div class="static-overlay" id="staticOverlay"></div>
+
+            <!-- Channel Indicator -->
+            <div class="channel-indicator" id="channelIndicator">CH: HOME</div>
+
+            <!-- Screen Content Container -->
+            <div class="screen-content" id="screenContent">
+              <!-- HOME CHANNEL -->
+              <div
+                class="channel-content home-content active"
+                data-channel="home"
+              >
+                <div class="title">MARCELO ALMEIDA</div>
+                <div class="subtitle">Full-Stack Developer</div>
+                <div class="tagline">
+                  Ex-Google • ITA • 16+ Years Experience
+                </div>
+                <div class="cta">[ Select a channel or scroll to explore ]</div>
+              </div>
+
+              <!-- ABOUT CHANNEL -->
+              <div class="channel-content about-content" data-channel="1">
+                <div class="bio-section">
+                  <div class="bio-avatar">👨‍💻</div>
+                  <div class="bio-text">
+                    <h2>About Marcelo</h2>
+                    <p>
+                      Computer Engineer from ITA, ex-Google (4.5 years),
+                      building software since 2010. Currently creating
+                      micro-SaaS products.
+                    </p>
+                  </div>
+                </div>
+                <div class="highlights">
+                  <span class="highlight-tag">🎓 ITA Graduate</span>
+                  <span class="highlight-tag">🔵 Ex-Google</span>
+                  <span class="highlight-tag">💻 16+ Years</span>
+                  <span class="highlight-tag">🚀 Entrepreneur</span>
+                </div>
+              </div>
+
+              <!-- EXPERIENCE CHANNEL -->
+              <div
+                class="channel-content"
+                data-channel="2"
+                style="padding-top: var(--space-xl)"
+              >
+                <h2
+                  style="
+                    color: var(--crt-glow);
+                    font-size: 14px;
+                    margin-bottom: var(--space-md);
+                  "
+                >
+                  📺 The Journey
+                </h2>
+                <div
+                  style="
+                    font-size: 11px;
+                    color: var(--text-secondary);
+                    line-height: 1.8;
+                  "
+                >
+                  <div style="margin-bottom: 8px">
+                    <span style="color: var(--retro-amber)">2010</span> → First
+                    line of C at ITA
+                  </div>
+                  <div style="margin-bottom: 8px">
+                    <span style="color: var(--retro-amber)">2013</span> →
+                    Exchange in Netherlands 🇳🇱
+                  </div>
+                  <div style="margin-bottom: 8px">
+                    <span style="color: var(--retro-amber)">2015</span> → Google
+                    Intern (iOS)
+                  </div>
+                  <div style="margin-bottom: 8px">
+                    <span style="color: var(--retro-amber)">2016-20</span> →
+                    Google SWE (C++, JS, Python)
+                  </div>
+                  <div style="margin-bottom: 8px">
+                    <span style="color: var(--retro-amber)">2022</span> → Hubla
+                    (TypeScript, React)
+                  </div>
+                  <div>
+                    <span style="color: var(--crt-glow)">NOW</span> → Building
+                    micro-SaaS 🚀
+                  </div>
+                </div>
+              </div>
+
+              <!-- PROJECTS CHANNEL -->
+              <div class="channel-content projects-content" data-channel="3">
+                <h2 style="color: var(--crt-glow); font-size: 14px">
+                  🎮 Open Source
+                </h2>
+                <div class="projects-grid">
+                  <div class="project-card">
+                    <h3>YourLinx</h3>
+                    <p>Quick links manager</p>
+                    <span class="project-tag">React</span>
+                  </div>
+                  <div class="project-card">
+                    <h3>Dev Utils</h3>
+                    <p>Workflow accelerators</p>
+                    <span class="project-tag">Clojure</span>
+                  </div>
+                  <div class="project-card">
+                    <h3>Extensions</h3>
+                    <p>Chrome extensions</p>
+                    <span class="project-tag">JS/TS</span>
+                  </div>
+                  <div class="project-card">
+                    <h3>Learning</h3>
+                    <p>F#, Zig, Rust...</p>
+                    <span class="project-tag">Various</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PRODUCTS CHANNEL -->
+              <div
+                class="channel-content"
+                data-channel="4"
+                style="padding-top: var(--space-xl); text-align: center"
+              >
+                <h2
+                  style="
+                    color: var(--crt-glow);
+                    font-size: 14px;
+                    margin-bottom: var(--space-md);
+                  "
+                >
+                  🛒 Products
+                </h2>
+                <p
+                  style="
+                    font-size: 11px;
+                    color: var(--text-secondary);
+                    margin-bottom: var(--space-md);
+                  "
+                >
+                  Commercial micro-SaaS applications
+                </p>
+                <div
+                  style="
+                    background: rgba(107, 33, 168, 0.2);
+                    padding: var(--space-md);
+                    border-radius: 8px;
+                    border: 1px dashed var(--portal-purple);
+                  "
+                >
+                  <p style="font-size: 12px; color: var(--retro-amber)">
+                    🚧 Coming Soon
+                  </p>
+                  <p
+                    style="
+                      font-size: 10px;
+                      color: var(--text-secondary);
+                      margin-top: var(--space-sm);
+                    "
+                  >
+                    Products launching in 2025
+                  </p>
+                </div>
+              </div>
+
+              <!-- CONTACT CHANNEL -->
+              <div class="channel-content contact-content" data-channel="5">
+                <h2>📡 Get in Touch</h2>
+                <div class="contact-links">
+                  <a href="mailto:hello2@marcelocra.com" class="contact-link">
+                    <span>📧</span>
+                    <span>hello2@marcelocra.com</span>
+                  </a>
+                  <a
+                    href="https://github.com/marcelocra"
+                    target="_blank"
+                    class="contact-link"
+                  >
+                    <span>💻</span>
+                    <span>github.com/marcelocra</span>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/marcelocra"
+                    target="_blank"
+                    class="contact-link"
+                  >
+                    <span>💼</span>
+                    <span>linkedin.com/in/marcelocra</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TV Controls -->
+          <div class="controls">
+            <div class="channel-buttons">
+              <button class="channel-btn" data-channel="home" data-label="Home">
+                🏠
+              </button>
+              <button class="channel-btn" data-channel="1" data-label="About">
+                1
+              </button>
+              <button class="channel-btn" data-channel="2" data-label="Journey">
+                2
+              </button>
+              <button
+                class="channel-btn"
+                data-channel="3"
+                data-label="Projects"
+              >
+                3
+              </button>
+              <button
+                class="channel-btn"
+                data-channel="4"
+                data-label="Products"
+              >
+                4
+              </button>
+              <button class="channel-btn" data-channel="5" data-label="Contact">
+                5
+              </button>
+            </div>
+            <div class="control-buttons">
+              <button class="mute-btn" id="muteBtn" title="Toggle Sound">
+                🔊
+              </button>
+              <button class="theme-btn" id="themeBtn" title="Toggle Theme">
+                ☀️
+              </button>
+              <button class="power-btn" id="powerBtn" title="Power">PWR</button>
+            </div>
+          </div>
+
+          <div class="brand">MARCELO.LAND</div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span>↓</span>
+        <small>Scroll for more</small>
+      </div>
+    </section>
+
+    <script>
+      // ========================================
+      // STATE MANAGEMENT
+      // ========================================
+      const state = {
+        currentChannel: "home",
+        isMuted: true,
+        isDarkTheme: true,
+        isRetroMode: false,
+        isDiscoMode: false,
+        isMatrixMode: false,
+        typedKeys: "",
+        wilhelmChance: 0.05, // 5% chance on channel change
+      };
+
+      // ========================================
+      // DOM ELEMENTS
+      // ========================================
+      const elements = {
+        tv: document.getElementById("tv"),
+        screenContent: document.getElementById("screenContent"),
+        channelIndicator: document.getElementById("channelIndicator"),
+        staticOverlay: document.getElementById("staticOverlay"),
+        discoBall: document.getElementById("discoBall"),
+        toast: document.getElementById("toast"),
+        muteBtn: document.getElementById("muteBtn"),
+        themeBtn: document.getElementById("themeBtn"),
+        powerBtn: document.getElementById("powerBtn"),
+        channelBtns: document.querySelectorAll(".channel-btn"),
+        channelContents: document.querySelectorAll(".channel-content"),
+      };
+
+      // ========================================
+      // SOUND EFFECTS
+      // ========================================
+      // Note: In production, use actual audio files
+      const sounds = {
+        // Wilhelm Scream - use a real file in production
+        wilhelm: null, // new Audio('/sounds/wilhelm.mp3'),
+        channelChange: null, // new Audio('/sounds/static.mp3'),
+      };
+
+      function playSound(soundName) {
+        if (state.isMuted || !sounds[soundName]) return;
+        sounds[soundName].currentTime = 0;
+        sounds[soundName].play().catch(() => {});
+      }
+
+      // ========================================
+      // CHANNEL SWITCHING
+      // ========================================
+      function switchChannel(channel) {
+        if (channel === state.currentChannel) return;
+
+        // Show static effect
+        elements.staticOverlay.classList.add("active");
+        elements.screenContent.classList.add("switching");
+
+        // Random Wilhelm scream chance
+        if (Math.random() < state.wilhelmChance) {
+          playSound("wilhelm");
+          showToast("🎬 Wilhelm Scream Easter Egg!");
+        }
+
+        setTimeout(() => {
+          // Update channel content
+          elements.channelContents.forEach((content) => {
+            content.classList.remove("active");
+            if (content.dataset.channel === channel) {
+              content.classList.add("active");
+            }
+          });
+
+          // Update channel indicator
+          const channelNames = {
+            home: "HOME",
+            1: "ABOUT",
+            2: "EXPERIENCE",
+            3: "PROJECTS",
+            4: "PRODUCTS",
+            5: "CONTACT",
+          };
+          elements.channelIndicator.textContent = `CH: ${
+            channelNames[channel] || channel
+          }`;
+
+          // Update active button
+          elements.channelBtns.forEach((btn) => {
+            btn.classList.toggle("active", btn.dataset.channel === channel);
+          });
+
+          state.currentChannel = channel;
+
+          // Hide static effect
+          setTimeout(() => {
+            elements.staticOverlay.classList.remove("active");
+            elements.screenContent.classList.remove("switching");
+          }, 100);
+        }, 150);
+      }
+
+      // ========================================
+      // THEME TOGGLE
+      // ========================================
+      function toggleTheme() {
+        state.isDarkTheme = !state.isDarkTheme;
+        document.documentElement.setAttribute(
+          "data-theme",
+          state.isDarkTheme ? "dark" : "light"
+        );
+        elements.themeBtn.textContent = state.isDarkTheme ? "☀️" : "🌙";
+      }
+
+      // ========================================
+      // MUTE TOGGLE
+      // ========================================
+      function toggleMute() {
+        state.isMuted = !state.isMuted;
+        elements.muteBtn.textContent = state.isMuted ? "🔇" : "🔊";
+        elements.muteBtn.classList.toggle("muted", state.isMuted);
+      }
+
+      // ========================================
+      // TOAST NOTIFICATIONS
+      // ========================================
+      function showToast(message, duration = 3000) {
+        elements.toast.textContent = message;
+        elements.toast.classList.add("show");
+        setTimeout(() => {
+          elements.toast.classList.remove("show");
+        }, duration);
+      }
+
+      // ========================================
+      // EASTER EGGS
+      // ========================================
+
+      // Konami Code: ↑↑↓↓←→←→BA
+      const konamiCode = [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+        "b",
+        "a",
+      ];
+      let konamiIndex = 0;
+
+      function checkKonami(key) {
+        if (key === konamiCode[konamiIndex]) {
+          konamiIndex++;
+          if (konamiIndex === konamiCode.length) {
+            activateRetroMode();
+            konamiIndex = 0;
+          }
+        } else {
+          konamiIndex = 0;
+        }
+      }
+
+      function activateRetroMode() {
+        if (state.isRetroMode) return;
+        state.isRetroMode = true;
+        document.body.classList.add("retro-mode");
+        showToast("🎮 RETRO MODE ACTIVATED! (30s)");
+
+        setTimeout(() => {
+          document.body.classList.remove("retro-mode");
+          state.isRetroMode = false;
+          showToast("Retro mode deactivated");
+        }, 30000);
+      }
+
+      // Disco Mode: type "disco"
+      function checkDiscoMode() {
+        if (state.typedKeys.toLowerCase().includes("disco")) {
+          activateDiscoMode();
+          state.typedKeys = "";
+        }
+      }
+
+      function activateDiscoMode() {
+        if (state.isDiscoMode) return;
+        state.isDiscoMode = true;
+        document.body.classList.add("disco-mode");
+        elements.discoBall.classList.add("active");
+        showToast("🪩 DISCO MODE! (15s)");
+
+        setTimeout(() => {
+          document.body.classList.remove("disco-mode");
+          elements.discoBall.classList.remove("active");
+          state.isDiscoMode = false;
+        }, 15000);
+      }
+
+      // Matrix Mode: type "matrix"
+      function checkMatrixMode() {
+        if (state.typedKeys.toLowerCase().includes("matrix")) {
+          activateMatrixMode();
+          state.typedKeys = "";
+        }
+      }
+
+      function activateMatrixMode() {
+        if (state.isMatrixMode) return;
+        state.isMatrixMode = true;
+        elements.tv.classList.add("matrix-mode");
+        showToast("🟢 Wake up, Marcelo... (15s)");
+
+        setTimeout(() => {
+          elements.tv.classList.remove("matrix-mode");
+          state.isMatrixMode = false;
+        }, 15000);
+      }
+
+      // ========================================
+      // EVENT LISTENERS
+      // ========================================
+
+      // Channel buttons
+      elements.channelBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          switchChannel(btn.dataset.channel);
+        });
+      });
+
+      // Control buttons
+      elements.themeBtn.addEventListener("click", toggleTheme);
+      elements.muteBtn.addEventListener("click", toggleMute);
+      elements.powerBtn.addEventListener("click", () => {
+        elements.staticOverlay.classList.add("active");
+        setTimeout(() => {
+          switchChannel("home");
+          showToast("📺 Welcome to marcelo.land!");
+        }, 300);
+      });
+
+      // Keyboard events for easter eggs
+      document.addEventListener("keydown", (e) => {
+        // Konami code check
+        checkKonami(e.key);
+
+        // Track typed keys for word-based easter eggs
+        if (e.key.length === 1) {
+          state.typedKeys += e.key;
+          // Keep only last 10 characters
+          if (state.typedKeys.length > 10) {
+            state.typedKeys = state.typedKeys.slice(-10);
+          }
+          checkDiscoMode();
+          checkMatrixMode();
+        }
+
+        // Number keys for channel switching
+        if (["1", "2", "3", "4", "5"].includes(e.key)) {
+          switchChannel(e.key);
+        }
+        if (e.key === "0" || e.key === "h" || e.key === "H") {
+          switchChannel("home");
+        }
+      });
+
+      // ========================================
+      // INITIALIZATION
+      // ========================================
+      console.log(
+        "%c╔═══════════════════════════════════════╗",
+        "color: #00FFE0"
+      );
+      console.log(
+        "%c║     Welcome to marcelo.land! 👋       ║",
+        "color: #00FFE0"
+      );
+      console.log(
+        "%c╠═══════════════════════════════════════╣",
+        "color: #00FFE0"
+      );
+      console.log(
+        "%c║  Try these Easter eggs:               ║",
+        "color: #FFB800"
+      );
+      console.log(
+        "%c║  • Konami code: ↑↑↓↓←→←→BA           ║",
+        "color: #FFB800"
+      );
+      console.log(
+        '%c║  • Type "disco" anywhere              ║',
+        "color: #FFB800"
+      );
+      console.log(
+        '%c║  • Type "matrix" anywhere             ║',
+        "color: #FFB800"
+      );
+      console.log(
+        "%c╚═══════════════════════════════════════╝",
+        "color: #00FFE0"
+      );
+
+      // Set initial active button
+      document.querySelector('[data-channel="home"]').classList.add("active");
+    </script>
+  </body>
+</html>
