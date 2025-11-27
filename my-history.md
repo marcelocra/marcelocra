@@ -8,6 +8,8 @@
 - I worked at two startups after 2020, until **deciding to create my own company**.
   - Wrote mostly JavaScript and TypeScript, for React and Node.
 
+This is a summarized version of my story. If you want to know more details, take a look at [my website](https://marcelocra.dev) or my [LinkedIn profile](https://linkedin.com/in/marcelocra).
+
 ## At Google
 
 Google is an amazing place to work and I recommend it very much for anyone who wants to be in a place that values software developement.
