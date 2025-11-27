@@ -1,17 +1,3 @@
-# README
-
-## Licensing
-
-- Code: Licensed under `Apache-2.0`. See `LICENSE`.
-- Content: Text and original images are licensed under `CC BY-NC 4.0`. See `LICENSE-CONTENT`.
-- Third-party assets: Trademarks, logos, and screenshots are the property of their respective owners and are NOT covered by the above licenses.
-
-### Attribution Guidance
-
-- Please attribute content as: "Content (text and images) Copyright 2025 Marcelo Almeida (@marcelocra), licensed under CC BY-NC 4.0 — https://creativecommons.org/licenses/by-nc/4.0/" and indicate changes if you made any.
-
-For a friendly explainer, see `content-licensing.md`.
-
 ## Hey there, welcome! 👋🏽
 
 My name is Marcelo. I’m a computer engineer from ITA, a former Google engineer, full-stack developer with 16<!-- (curr_year - 2010 + 1) -->+ years of experience, and an entrepreneur.
@@ -30,3 +16,17 @@ Feel free to:
   - in [English](https://bit.ly/4mp4rCK)
   - in [Brazilian Portuguese](https://marcelocra.dev/blog)
 - See **my pinned repos** below, they **are full of useful stuff**!
+
+# README
+
+## Licensing
+
+- Code: Licensed under `Apache-2.0`. See `LICENSE`.
+- Content: Text and original images are licensed under `CC BY-NC 4.0`. See `LICENSE-CONTENT`.
+- Third-party assets: Trademarks, logos, and screenshots are the property of their respective owners and are NOT covered by the above licenses.
+
+### Attribution Guidance
+
+- Please attribute content as: "Content (text and images) Copyright 2025 Marcelo Almeida (@marcelocra), licensed under CC BY-NC 4.0 — https://creativecommons.org/licenses/by-nc/4.0/" and indicate changes if you made any.
+
+For a friendly explainer, see `content-licensing.md`.
