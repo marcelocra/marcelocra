@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marcelo.land - TV Portal Prototype</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --void-black: #0a0a0f;
+        --crt-glow: #00ffe0;
+        --portal-purple: #6b21a8;
+        --signal-white: #f0f0f5;
+        --static-gray: #2a2a35;
+        --retro-amber: #ffb800;
+      }
+
+      body {
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        background: var(--void-black);
+        color: var(--signal-white);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .tv-container {
+        perspective: 1000px;
+      }
+
+      .tv {
+        width: 600px;
+        height: 500px;
+        background: linear-gradient(145deg, #3a3a3a 0%, #1a1a1a 100%);
+        border-radius: 20px;
+        padding: 40px;
+        transform: rotateX(2deg);
+        box-shadow:
+          0 30px 60px rgba(0, 0, 0, 0.5),
+          inset 0 2px 0 rgba(255, 255, 255, 0.1);
+        position: relative;
+      }
+
+      .tv::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 60px;
+        background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
+        border-radius: 0 0 10px 10px;
+      }
+
+      .screen {
+        width: 100%;
+        height: 320px;
+        background: #000;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        box-shadow:
+          inset 0 0 50px rgba(0, 255, 224, 0.1),
+          0 0 20px rgba(0, 255, 224, 0.2);
+      }
+
+      .screen::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.1) 0px,
+          rgba(0, 0, 0, 0.1) 1px,
+          transparent 1px,
+          transparent 2px
+        );
+        pointer-events: none;
+      }
+
+      .screen-content {
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .channel-indicator {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 14px;
+        color: var(--crt-glow);
+        text-shadow: 0 0 10px var(--crt-glow);
+      }
+
+      .title {
+        font-size: 24px;
+        color: var(--crt-glow);
+        text-shadow: 0 0 20px var(--crt-glow);
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        color: var(--signal-white);
+        opacity: 0.8;
+      }
+
+      .tagline {
+        font-size: 14px;
+        color: var(--retro-amber);
+        margin-top: 20px;
+      }
+
+      .cta {
+        margin-top: 30px;
+        font-size: 12px;
+        color: var(--signal-white);
+        opacity: 0.6;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 0.6;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .channel-buttons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .channel-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background: var(--static-gray);
+        color: var(--signal-white);
+        font-size: 12px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .channel-btn:hover {
+        background: var(--crt-glow);
+        color: var(--void-black);
+        box-shadow: 0 0 15px var(--crt-glow);
+      }
+
+      .power-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background: #ff3366;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+      }
+
+      .brand {
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        color: #666;
+        letter-spacing: 3px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="tv-container">
+      <div class="tv">
+        <div class="screen">
+          <div class="screen-content">
+            <div class="channel-indicator">CH: marcelo.land</div>
+            <div class="title">MARCELO ALMEIDA</div>
+            <div class="subtitle">Full-Stack Developer</div>
+            <div class="tagline">Ex-Google • ITA • 16+ Years Experience</div>
+            <div class="cta">[ Press any channel to explore ]</div>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="channel-buttons">
+            <button class="channel-btn" title="About">1</button>
+            <button class="channel-btn" title="Experience">2</button>
+            <button class="channel-btn" title="Projects">3</button>
+            <button class="channel-btn" title="Blog">4</button>
+            <button class="channel-btn" title="Contact">5</button>
+          </div>
+          <button class="power-btn">PWR</button>
+        </div>
+        <div class="brand">MARCELO.LAND</div>
+      </div>
+    </div>
+
+    <script>
+      // Simple channel switching demo
+      const channels = {
+        1: {
+          title: "ABOUT",
+          subtitle: "Who is Marcelo?",
+          tagline: "Computer Engineer • Entrepreneur • Tech Enthusiast",
+        },
+        2: { title: "EXPERIENCE", subtitle: "The Journey", tagline: "ITA → Google → Startups → Entrepreneurship" },
+        3: { title: "PROJECTS", subtitle: "What I Build", tagline: "Web Apps • Chrome Extensions • Open Source" },
+        4: { title: "BLOG", subtitle: "Thoughts & Learnings", tagline: "Technical Writing • Tutorials • Insights" },
+        5: { title: "CONTACT", subtitle: "Get in Touch", tagline: "hello2@marcelocra.com" },
+      };
+
+      document.querySelectorAll(".channel-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const ch = btn.textContent;
+          const data = channels[ch];
+          if (data) {
+            // Add static effect
+            const screen = document.querySelector(".screen-content");
+            screen.style.opacity = "0";
+            setTimeout(() => {
+              document.querySelector(".title").textContent = data.title;
+              document.querySelector(".subtitle").textContent = data.subtitle;
+              document.querySelector(".tagline").textContent = data.tagline;
+              document.querySelector(".channel-indicator").textContent = `CH ${ch}: ${data.title.toLowerCase()}`;
+              screen.style.opacity = "1";
+            }, 150);
+          }
+        });
+      });
+
+      // Konami code Easter egg
+      const konamiCode = [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+        "b",
+        "a",
+      ];
+      let konamiIndex = 0;
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === konamiCode[konamiIndex]) {
+          konamiIndex++;
+          if (konamiIndex === konamiCode.length) {
+            alert("🎮 KONAMI CODE ACTIVATED! Retro mode would trigger here.");
+            konamiIndex = 0;
+          }
+        } else {
+          konamiIndex = 0;
+        }
+      });
+
+      console.log("%c Welcome to marcelo.land! 👋", "font-size: 20px; color: #00FFE0;");
+      console.log("%c Try the Konami code: ↑↑↓↓←→←→BA", "font-size: 12px; color: #FFB800;");
+    </script>
+  </body>
+</html>
