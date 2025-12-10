@@ -4,27 +4,30 @@ My name is Marcelo. I'm a computer engineer from ITA, a former Google engineer, 
 
 I spent 4.5 years at Google[^google] before quitting to explore something new: building developer tools, micro-SaaS, and AI-native applications.
 
-These days I work with an **"Engineer in the Loop"** approach: I use LLMs and agents as teammates to ship high-quality code faster, while keeping architectural oversight and maintaining the code quality standards I learned at Google.
+These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs and AI agents like **Roo Code**, **GitHub Copilot**, and others as teammates to ship high-quality code faster, while keeping architectural oversight and maintaining the code quality standards I learned at Google.
 
 [^google]: Working mostly with C++, Python and JavaScript.
+[^eitl]: I discovered this term in [Roo Code's job posting](https://roocode.com/careers). It matched how I already think about AI-assisted development.
 
 ### 🚀 What I'm Building
 
 **Developer Tools:**
 
-- **[vscode-improved](https://github.com/marcelocra/vscode-improved)**: A VS Code extension bundling quality-of-life improvements. Built it to learn the Extensions API while improving my own workflow.
-- **[ghostkeys](https://github.com/marcelocra/ghostkeys)**: A keyboard remapper in Rust. I architect and review, agents help with the low-level Rust code.
+- **[vscode-improved](https://github.com/marcelocra/vscode-improved)**: A VS Code extension bundling quality-of-life improvements. Built to improve my own workflow while learning the Extensions API.
+- **[ghostkeys](https://github.com/marcelocra/ghostkeys)**: A keyboard remapper in Rust. Started with Kiro as a spec-driven project; now migrating to Roo Code to validate the GitHub Spec-Kit workflow.
+- **[devmagic](https://github.com/marcelocra/devmagic)**: A devcontainer setup that "just works", built in public to help developers avoid configuring the same things over and over again.
 - **[brave-byom-compat](https://github.com/marcelocra/brave-byom-compat)**: Compatibility layer between AI models and Brave's Leo AI.
 
 **AI-Powered Stuff:**
 
 - **[concept-compass](https://github.com/marcelocra/concept-compass)** (Hackathon): An infinite mind-map generator using OpenAI's OSS models. Built it to test and learn [Kiro](https://kiro.dev) (an AI-powered, spec-driven coding assistant).
 - **[Viralei](https://viralei.com.br)** (Hackathon): Turns legislative bills into engaging videos using AI. Built and deployed the MVP in 4 days, with Next.js. Still working on it.
+- **Solo Founder AI Engine** (In Progress): An integrated system orchestrating multiple AI tools: VS Code with Roo Code, Copilot, and Codex, plus n8n and Dify for workflow automation. Being designed to help solo founders ship like a team.
 
 **Products & Companies:**
 
 - **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
-- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed Top 3, and qualified to present at the main stage event for ~7,000 attendees.
+- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
 
 ### 🛠 Tech I Work With
 
@@ -32,7 +35,7 @@ I wrote my first line of code in 2010, in C. Then I learned Java, Python, JavaSc
 
 At Google I worked with **C++, Python, Java, and Bazel** (build systems). I also have experience with **VS Code Extensions API, Chrome Extensions API, Docker/Podman, and GitHub Actions**.
 
-For AI work, I mostly use **GitHub Copilot** (in VS Code and github.com) with **Roo Code** and **Codex extensions**, **Jules** (jules.google.com), and **Kiro**. I've also used **Claude Code, Gemini CLI**, and **Zed** (zed.dev). I use **Anthropic API** and **OpenRouter** as model providers for VS Code Copilot and apps. Lots of prompt engineering.
+For AI work, I recently adopted **Roo Code** and it seems like it's going to be central to how I build: I'm using it for custom modes now and will try soon for spec-driven development. I also use **GitHub Copilot** (in VS Code and github.com), the **Codex extension**, **Jules** (jules.google.com), and **Kiro**. I've also used **Claude Code, Gemini CLI**, and **Zed** (zed.dev). I use **Anthropic API** and **OpenRouter** as model providers. Lots of prompt engineering.
 
 ### 💡 What I Learned & Believe
 
@@ -48,6 +51,9 @@ For AI work, I mostly use **GitHub Copilot** (in VS Code and github.com) with **
 - **Solid foundations matter**: Algorithms, system design, and architecture knowledge are essential to use AI tools effectively. **How will I know the AI gave me a good solution if I don't understand the bounds?**
 - **AI as a teammate**: LLMs serve as powerful productivity multipliers, yet human judgment on design and architecture remains essential.
 - **Ship fast, maintain well**: High velocity with strong architectural oversight—not one or the other
+- **Build in public**: I share my work openly—contributions welcome on all my repos. Developer tools improve fastest when shaped by the community using them.
+
+**My path back to building:** After Google, I spent time in digital marketing—learning user psychology, sales copy, and how to take products to market. That experience sharpened how I think about user-facing products. Now I'm back to what I do best: building. AI gives me the leverage to ship like a team, without leaving the keyboard.
 
 Feel free to:
 
