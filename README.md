@@ -49,11 +49,11 @@ For AI work, I recently adopted **Roo Code** and it seems like it's going to be 
 **What I believe now:**
 
 - **Solid foundations matter**: Algorithms, system design, and architecture knowledge are essential to use AI tools effectively. **How will I know the AI gave me a good solution if I don't understand the bounds?**
-- **AI as a teammate**: LLMs serve as powerful productivity multipliers, yet human judgment on design and architecture remains essential.
-- **Ship fast, maintain well**: High velocity with strong architectural oversight—not one or the other
-- **Build in public**: I share my work openly—contributions welcome on all my repos. Developer tools improve fastest when shaped by the community using them.
+- **AI as a teammate**: LLMs are powerful productivity multipliers, but human judgment on design and architecture is still essential.
+- **Ship fast, maintain well**: High velocity with strong architectural oversight, not one or the other
+- **Build in public**: I share my work openly, contributions welcome on all my repos. Developer tools improve fastest when shaped by the community using them.
 
-**My path back to building:** After Google, I spent time in digital marketing—learning user psychology, sales copy, and how to take products to market. That experience sharpened how I think about user-facing products. Now I'm back to what I do best: building. AI gives me the leverage to ship like a team, without leaving the keyboard.
+**My path back to building:** After Google, I spent time in digital marketing, learning user psychology, sales copy, and how to take products to market. That experience sharpened how I think about user-facing products. Now I'm back to what I do best: building. AI gives me the leverage to ship like a team, without leaving the keyboard.
 
 Feel free to:
 
