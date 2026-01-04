@@ -7,9 +7,14 @@ I spent 4.5 years at Google[^google] before quitting to explore something new: b
 These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs and AI agents like **GitHub Copilot**, **Roo Code**, **Continue.dev** and others as teammates to ship high-quality code faster, while keeping architectural oversight and maintaining the code quality standards I learned at Google.
 
 [^google]: Working mostly with C++, Python and JavaScript.
-[^eitl]: I discovered this term in [Roo Code's job posting](https://roocode.com/careers). It matched how I already think about AI-assisted development.
+[^eitl]: I discovered this term in a job posting from Roo Code. It matches how I already think about AI-assisted development, so I decided to use.
 
 ### 🚀 What I'm Building
+
+- **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
+- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
+- **Quick prototypes**: Most ideas I want to try start out as **quick prototypes** just for myself, built using **GitHub Spark** (or similar tools: v0.app, bolt.new, etc.) and **prompt engineering**.
+- **YourLinx** (Product): A local-only, private and personal golink Chrome Extension. Building with React and Tailwind CSS.
 
 **AI-Powered Stuff:**
 
@@ -17,12 +22,6 @@ These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs
 - **[concept-compass](https://github.com/marcelocra/concept-compass)** (Hackathon): An infinite mind-map generator using OpenAI's OSS models. Built it to test and learn [Kiro](https://kiro.dev) (an AI-powered, spec-driven coding assistant).
 - **[Viralei](https://viralei.com.br)** (Hackathon): Turns legislative bills into engaging videos using AI. Built and deployed the MVP in 4 days, with Next.js. Still working on it.
 - **Solo Founder AI Engine** (In Progress): An integrated system orchestrating multiple AI tools: VS Code with Roo Code, Copilot, and Codex, plus n8n and Dify for workflow automation. Being designed to help solo founders ship like a team.
-- **Quick prototypes**: I built a number of quick prototypes for myself using **GitHub Spark** and similar tools (v0.app, bolt.new, etc.).
-
-**Misc:**
-
-- **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
-- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
 
 **Developer Tools:**
 
