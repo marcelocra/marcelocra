@@ -11,23 +11,25 @@ These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs
 
 ### 🚀 What I'm Building
 
+**AI-Powered Stuff:**
+
+- **[Acerto AI](https://acerto.ai)** (Product): A personal assistant for debt collection via WhatsApp. Building with Next.js, Tailwind CSS, shadcn/ui, Evolution API, etc.
+- **[concept-compass](https://github.com/marcelocra/concept-compass)** (Hackathon): An infinite mind-map generator using OpenAI's OSS models. Built it to test and learn [Kiro](https://kiro.dev) (an AI-powered, spec-driven coding assistant).
+- **[Viralei](https://viralei.com.br)** (Hackathon): Turns legislative bills into engaging videos using AI. Built and deployed the MVP in 4 days, with Next.js. Still working on it.
+- **Solo Founder AI Engine** (In Progress): An integrated system orchestrating multiple AI tools: VS Code with Roo Code, Copilot, and Codex, plus n8n and Dify for workflow automation. Being designed to help solo founders ship like a team.
+- **Quick prototypes**: I built a number of quick prototypes for myself using **GitHub Spark** and similar tools (v0.app, bolt.new, etc.).
+
+**Misc:**
+
+- **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
+- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
+
 **Developer Tools:**
 
 - **[devmagic](https://github.com/marcelocra/devmagic)**: A devcontainer setup that "just works", built in public to help developers avoid configuring the same things over and over again.
 - **[ghostkeys](https://github.com/marcelocra/ghostkeys)**: A keyboard remapper in Rust. Started with Kiro as a spec-driven project; now migrating to Roo Code to validate the GitHub Spec-Kit workflow.
 - **[vscode-improved](https://github.com/marcelocra/vscode-improved)**: A VS Code extension bundling quality-of-life improvements. Built to improve my own workflow while learning the Extensions API.
 - **[brave-byom-compat](https://github.com/marcelocra/brave-byom-compat)**: Compatibility layer between AI models and Brave's Leo AI.
-
-**AI-Powered Stuff:**
-
-- **[concept-compass](https://github.com/marcelocra/concept-compass)** (Hackathon): An infinite mind-map generator using OpenAI's OSS models. Built it to test and learn [Kiro](https://kiro.dev) (an AI-powered, spec-driven coding assistant).
-- **[Viralei](https://viralei.com.br)** (Hackathon): Turns legislative bills into engaging videos using AI. Built and deployed the MVP in 4 days, with Next.js. Still working on it.
-- **Solo Founder AI Engine** (In Progress): An integrated system orchestrating multiple AI tools: VS Code with Roo Code, Copilot, and Codex, plus n8n and Dify for workflow automation. Being designed to help solo founders ship like a team.
-
-**Products & Companies:**
-
-- **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
-- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
 
 ### 🛠 Tech I Work With
 
