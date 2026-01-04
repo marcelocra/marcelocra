@@ -11,16 +11,18 @@ These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs
 
 ### 🚀 What I'm Building
 
-- **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
-- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
+#### ⭐ Highlights
+
+- **Futurin** (Founder): My software lab where I build and deploy micro-SaaS products using Next.js, TypeScript, Tailwind CSS, and shadcn/ui (mostly).
+- **Fair Pricing Works** (Community Contribution): A website focused on bringing attention to Purchasing Power Parity (PPP). In the AI and subscription era, it is harder than it needed to be for people living in countries with depreciated currencies, like Brazil or India. PPP helps bridge the gap.
 - **Quick prototypes**: Most ideas I want to try start out as **quick prototypes** just for myself, built using **GitHub Spark** (or similar tools: v0.app, bolt.new, etc.) and **prompt engineering**.
-- **YourLinx** (Product): A local-only, private and personal golink Chrome Extension. Building with React and Tailwind CSS.
 
 **AI-Powered Stuff:**
 
+- **Adapta AI Challenge**: Selected as one of ~80 finalists (from 2,000+ applicants) for Brazil's largest AI Hackathon. Built an OOH analytics tool in ~24h, placed **Top 3**, and presented to **~7,000 people** at the Adapta Summit main stage.
+- **Chronos Task Manager** (Product): An event-driven task management system with AI-powered natural language parsing. See [details about architecture, features and tech stack](https://gist.github.com/marcelocra/b1601766323d5b901d23660b211e0730).
 - **[Acerto AI](https://acerto.ai)** (Product): A personal assistant for debt collection via WhatsApp. Building with Next.js, Tailwind CSS, shadcn/ui, Evolution API, etc.
 - **[concept-compass](https://github.com/marcelocra/concept-compass)** (Hackathon): An infinite mind-map generator using OpenAI's OSS models. Built it to test and learn [Kiro](https://kiro.dev) (an AI-powered, spec-driven coding assistant).
-- **[Viralei](https://viralei.com.br)** (Hackathon): Turns legislative bills into engaging videos using AI. Built and deployed the MVP in 4 days, with Next.js. Still working on it.
 - **Solo Founder AI Engine** (In Progress): An integrated system orchestrating multiple AI tools: VS Code with Roo Code, Copilot, and Codex, plus n8n and Dify for workflow automation. Being designed to help solo founders ship like a team.
 
 **Developer Tools:**
@@ -29,6 +31,16 @@ These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs
 - **[ghostkeys](https://github.com/marcelocra/ghostkeys)**: A keyboard remapper in Rust. Started with Kiro as a spec-driven project; now migrating to Roo Code to validate the GitHub Spec-Kit workflow.
 - **[vscode-improved](https://github.com/marcelocra/vscode-improved)**: A VS Code extension bundling quality-of-life improvements. Built to improve my own workflow while learning the Extensions API.
 - **[brave-byom-compat](https://github.com/marcelocra/brave-byom-compat)**: Compatibility layer between AI models and Brave's Leo AI.
+
+**Up Next:**
+
+- **Do I Need a License** (Community Contribution): The fastest way to choose the right license for your project. A modern, opinionated license chooser for developers. Get your answer in 30 seconds without reading legal documents.
+- **Touchpad Navigation Pro** (Community Contribution, Open Source): Navigate back/forward with swipe (right/left) in Chromium-based browsers (Chrome, Brave, Edge, etc.).
+
+#### 📃 Other Projects
+
+- **YourLinx** (Product): A local-only, private and personal golink Chrome Extension. Building with React and Tailwind CSS.
+- **[Viralei](https://viralei.com.br)** (Hackathon): Turns legislative bills into engaging videos using AI. Built and deployed the MVP in 4 days, with Next.js. Still working on it.
 
 ### 🛠 Tech I Work With
 
