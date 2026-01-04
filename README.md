@@ -13,9 +13,9 @@ These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs
 
 **Developer Tools:**
 
-- **[vscode-improved](https://github.com/marcelocra/vscode-improved)**: A VS Code extension bundling quality-of-life improvements. Built to improve my own workflow while learning the Extensions API.
-- **[ghostkeys](https://github.com/marcelocra/ghostkeys)**: A keyboard remapper in Rust. Started with Kiro as a spec-driven project; now migrating to Roo Code to validate the GitHub Spec-Kit workflow.
 - **[devmagic](https://github.com/marcelocra/devmagic)**: A devcontainer setup that "just works", built in public to help developers avoid configuring the same things over and over again.
+- **[ghostkeys](https://github.com/marcelocra/ghostkeys)**: A keyboard remapper in Rust. Started with Kiro as a spec-driven project; now migrating to Roo Code to validate the GitHub Spec-Kit workflow.
+- **[vscode-improved](https://github.com/marcelocra/vscode-improved)**: A VS Code extension bundling quality-of-life improvements. Built to improve my own workflow while learning the Extensions API.
 - **[brave-byom-compat](https://github.com/marcelocra/brave-byom-compat)**: Compatibility layer between AI models and Brave's Leo AI.
 
 **AI-Powered Stuff:**
