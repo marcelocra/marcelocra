@@ -4,7 +4,7 @@ My name is Marcelo. I'm a computer engineer from ITA, a former Google engineer, 
 
 I spent 4.5 years at Google[^google] before quitting to explore something new: building developer tools, micro-SaaS, and AI-native applications.
 
-These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs and AI agents like **Roo Code**, **GitHub Copilot**, and others as teammates to ship high-quality code faster, while keeping architectural oversight and maintaining the code quality standards I learned at Google.
+These days I work with an **"Engineer in the Loop"**[^eitl] approach: I use LLMs and AI agents like **GitHub Copilot**, **Roo Code**, **Continue.dev** and others as teammates to ship high-quality code faster, while keeping architectural oversight and maintaining the code quality standards I learned at Google.
 
 [^google]: Working mostly with C++, Python and JavaScript.
 [^eitl]: I discovered this term in [Roo Code's job posting](https://roocode.com/careers). It matched how I already think about AI-assisted development.
