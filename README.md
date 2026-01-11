@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="./images/profile-image.png" alt="Marcelo Almeida" width="150">
-
   # Hey there, welcome! 👋🏽
 
   **Ex-Google Engineer | Full-Stack Product Builder | AI-Augmented Developer**
