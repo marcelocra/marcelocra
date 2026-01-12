@@ -5,9 +5,9 @@
   **Ex-Google Engineer | Full-Stack Product Builder | AI-Augmented Developer**
 </div>
 
-My name is Marcelo. I'm a Computer Engineer from **ITA** and a former **Google** engineer with 15+ years of experience. I am now an entrepreneur building developer tools, micro-SaaS, and AI-native applications.
+My name is Marcelo. I'm a Computer Engineer from **ITA** and a former **Google** engineer with 15+ years of experience. I am now an entrepreneur building micro-SaaS, AI-native applications and developer tools.
 
-I spent 4.5 years at Google[^google] before leaving to explore new ventures. Today, I work with an **"Engineer in the Loop"**[^eitl] approach: leveraging AI agents like **Roo Code**, **GitHub Copilot**, and **Claude** as force multipliers. This allows me to ship high-quality code at the speed of a startup while maintaining the rigorous architectural standards I mastered at Google.
+I spent 4.5 years at Google[^google] before leaving to explore new ventures. Today, I work with an **"Engineer in the Loop"**[^eitl] approach: leveraging AI agents like **Cursor**, **Claude** and **Roo Code** as force multipliers. This allows me to ship high-quality code quickly while maintaining good architectural standards.
 
 [^google]: Working mostly with C++, Python, and JavaScript on Chromium and Data Pipelines.
 [^eitl]: "Engineer in the Loop" means using AI to accelerate implementation while the human engineer retains control over system design, architecture, and quality assurance.
