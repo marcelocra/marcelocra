@@ -31,14 +31,14 @@ My conceptual framework for AI-assisted development, designed to optimize the "E
 A VS Code extension bundling quality-of-life improvements.
 * **Why it matters:** My first hands-on experience using the VS Code Extension API to optimize my own workflow.
 
-## 🚀 Other Projects
+## Other Projects
 
 * **[devmagic](https://github.com/marcelocra/devmagic):** A devcontainer setup that "just works," solving the "works on my machine" problem.
 * **Adapta AI Challenge:** **Top 3 Finalist** in Brazil's largest-ever hackathon. Built an OOH analytics tool in ~24h.
 * **[Viralei](https://viralei.com.br):** **Hackathon Project.** Turns legislative bills into engaging videos. Built the MVP in 4 days.
 * **Fair Pricing Works:** Open Source initiative advocating for Purchasing Power Parity (PPP).
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 I wrote my first line of code in 2010 (in C). Today, I choose tools that mix personal preference, velocity, and leverage.
 
@@ -47,7 +47,7 @@ I wrote my first line of code in 2010 (in C). Today, I choose tools that mix per
 * **AI Workflow:** Zed, Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
 * **Tooling:** OpenRouter, Anthropic API, Google AI Studio, Firebase Studio, Chrome Extensions API, Docker/Podman, DevContainers.
 
-## 💡 What I Believe
+## What I Believe
 
 * **Solid foundations matter:** Algorithms and system design are essential to use AI effectively. *How will I know the AI gave me a good solution if I don't understand the bounds?*
 * **AI as a teammate:** LLMs are multipliers, but human judgment on architecture is non-negotiable.
