@@ -51,7 +51,7 @@ I wrote my first line of code in 2010 (in C). Today, I choose tools that mix per
 
 * **Core:** TypeScript, React, Next.js, Node.js, Tailwind CSS.
 * **Systems & AI:** Rust, Python (Automation/Pipelines), C++ (Google background).
-* **AI Workflow:** Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
+* **AI Workflow:** Zed, Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
 * **Tooling:** OpenRouter, Anthropic API, Google AI Studio, Firebase Studio, Chrome Extensions API, Docker/Podman, DevContainers.
 
 ---

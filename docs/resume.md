@@ -1,6 +1,5 @@
 # Marcelo Almeida
-
-**AI-Augmented Full-Stack Product Engineer & Tool Builder**\
+**Product Engineer & Tool Builder (Ex-Google)**\
 Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marcelo.land)\
 [github.com/marcelocra](https://github.com/marcelocra) | [linkedin.com/in/marcelocra](https://linkedin.com/in/marcelocra)
 
@@ -8,74 +7,52 @@ Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marc
 
 ## Summary
 
-Ex-Googler and ITA engineer with 15+ years of experience. I bridge the gap between complex system design, polished UI/UX, and high-velocity product shipping through an "**Engineer in the Loop**" workflow. By orchestrating AI agents and LLMs as a force multiplier, I deliver Google-standard code quality at the speed of an agile solo founder. Specialist in building user-centric developer tools, micro-SaaS, and AI-native applications that prioritize user psychology, visual polish, and architectural longevity.
-
-- **Engineering**: System Design & Architecture, Data Pipelines, AI Agent Orchestration, Job Queues.
-- **Product & Design**: Design Engineering (UI/UX Polish), User Psychology, Chrome/VS Code Extensions, Landing Page Optimization.
-- **Technologies**: TypeScript, Node.js, React, Next.js, Tailwind CSS, shadcn/ui, PostgreSQL, Supabase, Vercel.
+Ex-Google Engineer (Search/Data Pipelines/Chromium) and ITA graduate with 15+ years of experience. I quit Big Tech to build AI-native tools and micro-SaaS products. Currently operating as an **"Engineer in the Loop,"** leveraging AI agents to ship high-quality code rapidly while maintaining architectural oversight.
 
 ---
 
 ## Professional Experience
 
-### **Futurin** | Founder & Lead Engineer
-*Remote | 2022 — Present*
+### **Futurin** | Founder & Product Engineer
+*Remote | 2023 — Present*
 
-Founded a software lab to build and deploy micro-SaaS products.
+Founded a technical R&D lab to build developer tools and AI-native applications.
 
-- **High-Velocity Engineering**: Orchestrated a team of AI agents to accelerate full-stack development cycles, delivering multiple micro-SaaS products from architectural design to deployment in record time using Next.js, TypeScript, and Supabase.
-- **Product Engineering**: Handled the entire lifecycle of products like **YourLinx** (Chrome Extension) from architectural design to landing page development and deployment.
-- **Adapta AI Challenge**: Placed **Top 3** out of 2,000+ applicants in Brazil's largest AI Hackathon. Built and presented a functional OOH analytics tool in under 24 hours to an audience of 7,000 people.
+* **GhostKeys (Rust + AI):** Built a working Windows tray application in ~2 days with **zero prior Rust experience**. Used a spec-driven AI workflow (Kiro) to prove that strong system design skills can be ported to strict languages via agents.
+* **Concept Compass & Infrastructure (LLM Eval):** Built an infinite mind-map generator powered by OpenAI's OSS models. Initially attempted to host the LLMs locally but hit hardware constraints even with the smaller 20b model. This forced a transition to **OpenRouter**, which now powers most of my daily toolchain (Zed, Roo Code, Continue).
+* **Solo Founder AI Engine:** Developed a 3-Phase Workflow for AI assisted development, optimizing costs and accuracy by leveraging different LLM models.
+* **High-Velocity Shipping:** Placed **Top 3** in Brazil's largest AI Hackathon (Adapta). Built an OOH analytics MVP in ~24 hours using Next.js and AI APIs.
 
 ### **Vender Bem Online** | Founder & Digital Marketer
 *Remote | 2020 — Present*
 
 Digital marketing agency focused on paid media and product launches (PLF).
 
-- **Campaign Execution**: Executed strategy and copy for product launches.
-- **User Psychology**: Developed deep understanding of user acquisition and sales copy, a crucial skill for building user-facing products, including developer tools.
+* Executed strategy and copy for product launches, developing good understanding of user acquisition and sales copy, useful skills in a startup context and when building user-facing products.
+
 
 ### **Hubla** | Software Engineer
 *Remote | May 2022 — May 2023*
 
-- **System Design**: Structured the engineering team's design process, introducing mandatory RFCs which drastically improved codebase quality and consistency.
-- **Core Features**: Implemented the frontend for the order bump, upsell, and mobile checkout features.
-- **Observability**: Designed and implemented the logging infrastructure using OpenTelemetry specs.
+* **System Design:** Structured the engineering team's design process, introducing mandatory RFCs which improved codebase quality and consistency.
+* **Core Features:** Implemented frontend for order bumps, upsells, and mobile checkout.
+* **Observability:** Designed and implemented logging infrastructure using OpenTelemetry specs.
 
 ### **Google** | Software Engineer
 *Belo Horizonte, Brazil | Feb 2016 — Jan 2020*
 
-- **Chromium**: Worked on the C++ codebase with strict 6-week release cycles. Refactored legacy components to decouple architecture and improve maintainability.
-- **Data Pipelines**: Designed and built globally scalable data processing pipelines using Java/Flume.
-- **Cross-Functional Leadership**: Acted as a bridge between PMs, designers, and engineering to ensure technical feasibility of product features.
+* **Chromium:** Worked on the C++ codebase with strict 6-week release cycles. Refactored legacy components to add new features while also decoupling existing architecture and improving maintainability.
+* **Data Pipelines:** Designed and built globally scalable data processing pipelines using Dataflow (Java).
+* **Cross-Functional:** Acted as the technical bridge between PMs and Design to ensure feasibility of features.
 
 ---
 
-## Selected Engineering & AI Projects
+## Skills & Stack
 
-**VS Code Improved (Open Source)**
-- Built a VS Code extension to bundle developer quality-of-life improvements.
-- Gained practical experience with the VS Code Extensions API.
-
-**Concept Compass (AI Tool)**
-- Developed an infinite mind-map generator using OpenAI API.
-- Solved challenges in structuring LLM outputs to create consistent, interactive UI nodes in React Flow.
-
-**GhostKeys (Rust + AI)**
-- Engineered a low-level keyboard remapper in Rust, utilizing a "Spec-driven" workflow where agents generated implementation details while I maintained architectural oversight.
-
-**Viralei (Hackathon Project)**
-- Built a platform that turns legislative bills into short, engaging videos using AI.
-- Deployed in 4 days using Next.js and public data APIs.
-
----
-
-## Skills
-
-- **Languages**: TypeScript, JavaScript, Python, C++, Java, Rust (AI-Assisted).
-- **Stack**: React, Next.js, Node.js, Tailwind CSS, PostgreSQL, Supabase, Firebase.
-- **Tools**: VS Code Extensions API, Chrome Extensions API, Docker, GitHub Actions.
-- **AI Tools**: Roo Code, GitHub Copilot, GitHub Spark, Claude Code (CLI/Web), Gemini CLI, Jules, Anthropic API, OpenRouter.
+* **Languages:** TypeScript, JavaScript, Python, Rust (AI-Assisted), C++, Java.
+* **Web Stack:** React, Next.js, Node.js, Tailwind CSS, PostgreSQL, Supabase.
+* **AI Workflow:** Zed, Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
+* **Tooling:** OpenRouter, Anthropic API, Google AI Studio, Firebase Studio, Chrome Extensions API, Docker/Podman, DevContainers.
 
 ---
 
