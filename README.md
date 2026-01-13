@@ -3,8 +3,8 @@
 # Marcelo Almeida
 **Product Engineer & Tool Builder | Ex-Google | ITA**
 
-[![Site](https://img.shields.io/badge/Portfolio-marcelo.land-blue?style=for-the-badge)](https://marcelo.land)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge)](https://linkedin.com/in/marcelocra)
+[![Site](https://img.shields.io/badge/Site-marcelo.land-blue)](https://marcelo.land)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2)](https://linkedin.com/in/marcelocra)
 
 </div>
 
