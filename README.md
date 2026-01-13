@@ -7,7 +7,7 @@
 
 </div>
 
-My name is Marcelo. I'm a Computer Engineer from [**ITA**][^ita] and a former **Google** engineer (Search, Data Pipelines / Dataflow, Chromium) with 15+ years of experience. I quit Big Tech to explore entrepreneurship and am now building **AI-native applications** and **tools**.
+My name is Marcelo. I'm a Computer Engineer from **ITA**[^ita] and a former **Google** engineer (Search, Data Pipelines / Dataflow, Chromium) with 15+ years of experience. I quit Big Tech to explore entrepreneurship and am now building **AI-native applications** and **tools**.
 
 I use AI agents (Cursor, OpenCode, Roo Code, etc.) as force multipliers to ship high-quality code rapidly, while retaining control over system design and architecture.
 
