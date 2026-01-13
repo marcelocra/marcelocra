@@ -5,7 +5,7 @@ Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marc
 
 ## Summary
 
-Ex-Google Engineer (Search/Data Pipelines/Chromium) and ITA graduate[^ita] with 15+ years of experience. I quit Big Tech to build AI-native tools and micro-SaaS products. Currently operating as an **"Engineer in the Loop,"** leveraging AI agents to ship high-quality code rapidly while maintaining architectural oversight.
+Ex-Google Engineer (Search/Data Pipelines/Chromium) and ITA[^ita] graduate with 15+ years of experience. I quit Big Tech to build AI-native tools and micro-SaaS products. Currently operating as an **"Engineer in the Loop,"** leveraging AI agents to ship high-quality code rapidly while maintaining architectural oversight.
 
 [^ita]: Widely regarded as one of Brazil's top, if not the best, engineering institutes (Top 1%), known for its extremely rigorous entry and high academic standards.
 
