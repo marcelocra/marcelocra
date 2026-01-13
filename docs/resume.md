@@ -1,8 +1,8 @@
 # Marcelo Almeida
 
-**AI-Augmented Full-Stack Product Engineer & Tool Builder**
-Remote | +55 31 97132 0866 | [hi@marcelo.land](mailto:hi@marcelo.land)
-[marcelo.land](https://marcelo.land) | [github.com/marcelocra](https://github.com/marcelocra) | [linkedin.com/in/marcelocra](https://linkedin.com/in/marcelocra)
+**AI-Augmented Full-Stack Product Engineer & Tool Builder**\
+Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marcelo.land)\
+[github.com/marcelocra](https://github.com/marcelocra) | [linkedin.com/in/marcelocra](https://linkedin.com/in/marcelocra)
 
 ---
 
