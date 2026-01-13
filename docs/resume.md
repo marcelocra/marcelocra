@@ -3,13 +3,9 @@
 Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marcelo.land)\
 [github.com/marcelocra](https://github.com/marcelocra) | [linkedin.com/in/marcelocra](https://linkedin.com/in/marcelocra)
 
----
-
 ## Summary
 
 Ex-Google Engineer (Search/Data Pipelines/Chromium) and ITA graduate with 15+ years of experience. I quit Big Tech to build AI-native tools and micro-SaaS products. Currently operating as an **"Engineer in the Loop,"** leveraging AI agents to ship high-quality code rapidly while maintaining architectural oversight.
-
----
 
 ## Professional Experience
 
@@ -45,16 +41,12 @@ Digital marketing agency focused on paid media and product launches (PLF).
 * **Data Pipelines:** Designed and built globally scalable data processing pipelines using Dataflow (Java).
 * **Cross-Functional:** Acted as the technical bridge between PMs and Design to ensure feasibility of features.
 
----
-
 ## Skills & Stack
 
 * **Languages:** TypeScript, JavaScript, Python, Rust (AI-Assisted), C++, Java.
 * **Web Stack:** React, Next.js, Node.js, Tailwind CSS, PostgreSQL, Supabase.
 * **AI Workflow:** Zed, Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
 * **Tooling:** OpenRouter, Anthropic API, Google AI Studio, Firebase Studio, Chrome Extensions API, Docker/Podman, DevContainers.
-
----
 
 ## Education
 

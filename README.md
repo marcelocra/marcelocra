@@ -1,7 +1,6 @@
 <div align="center">
 
-# Marcelo Almeida
-**Product Engineer & Tool Builder | Ex-Google | ITA**
+## Product Engineer & Tool Builder | Ex-Google | ITA
 
 [![Site](https://img.shields.io/badge/Site-marcelo.land-blue)](https://marcelo.land)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2)](https://linkedin.com/in/marcelocra)
@@ -11,8 +10,6 @@
 My name is Marcelo. I'm a Computer Engineer from **ITA** and a former **Google** engineer (Search, Data Pipelines / Dataflow, Chromium) with 15+ years of experience. I quit Big Tech to explore entrepreneurship and am now building **AI-native applications** and **tools**.
 
 I use AI agents (Cursor, OpenCode, Roo Code, etc.) as force multipliers to ship high-quality code rapidly, while retaining control over system design and architecture.
-
----
 
 ## AI Apps & Tools
 
@@ -34,16 +31,12 @@ My conceptual framework for AI-assisted development, designed to optimize the "E
 A VS Code extension bundling quality-of-life improvements.
 * **Why it matters:** My first hands-on experience using the VS Code Extension API to optimize my own workflow.
 
----
-
 ## 🚀 Other Projects
 
 * **[devmagic](https://github.com/marcelocra/devmagic):** A devcontainer setup that "just works," solving the "works on my machine" problem.
 * **Adapta AI Challenge:** **Top 3 Finalist** in Brazil's largest-ever hackathon. Built an OOH analytics tool in ~24h.
 * **[Viralei](https://viralei.com.br):** **Hackathon Project.** Turns legislative bills into engaging videos. Built the MVP in 4 days.
 * **Fair Pricing Works:** Open Source initiative advocating for Purchasing Power Parity (PPP).
-
----
 
 ## 🛠️ Tech Stack
 
@@ -53,8 +46,6 @@ I wrote my first line of code in 2010 (in C). Today, I choose tools that mix per
 * **Systems & AI:** Rust, Python (Automation/Pipelines), C++ (Google background).
 * **AI Workflow:** Zed, Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
 * **Tooling:** OpenRouter, Anthropic API, Google AI Studio, Firebase Studio, Chrome Extensions API, Docker/Podman, DevContainers.
-
----
 
 ## 💡 What I Believe
 
