@@ -21,7 +21,7 @@ I am actively building with **AI Agents** and studying their impact on **Develop
 A high-performance keyboard remapper written in **Rust**.
 * **Why it matters:** I built this functional Rust desktop tray application in just a couple of days with **zero prior Rust experience**. The goal was to test if my product and system design ideas would port well to a strictly typed language using a spec-driven AI workflow. Built using Kiro (kiro.dev).
 
-### 🧠 [concept-compass](https://github.com/marcelocra/concept-compass) (LLM Eval)
+### 🧠 [concept-compass](https://github.com/marcelocra/concept-compass)
 An infinite mind-map generator powered by OpenAI's OSS models.
 * **Why it matters:** This started as my first attempt at hosting **LLMs** locally. It proved unfeasible, as my hardware couldn't handle even the 20b model efficiently. This constraint pushed me to discover OpenRouter. Today, I use OpenRouter daily to power not just apps like this, but many parts of my toolchain (Zed, OpenCode, Roo Code, Continue).
 
