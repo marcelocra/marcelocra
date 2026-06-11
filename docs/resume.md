@@ -2,7 +2,7 @@
 
 **Full Stack Product Engineer & Indie Founder (Ex-Google)**
 
-Remote · [marcelo@uai.so](mailto:marcelo@uai.so) · [Site](https://marcelo.land) · [Markdown CV](https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md) · [GitHub](https://github.com/marcelocra) · [LinkedIn](https://linkedin.com/in/marcelocra)
+Remote · [marcelo@uai.so](mailto:marcelo@uai.so) · [Site](https://marcelo.land) · [GitHub](https://github.com/marcelocra) · [LinkedIn](https://linkedin.com/in/marcelocra)
 
 ## Summary
 

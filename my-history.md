@@ -1,1 +1,1 @@
-Sorry, I moved it [here](./story.md).
+Moved to [./story.md](./story.md).
