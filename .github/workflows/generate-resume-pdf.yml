@@ -6,7 +6,11 @@ on:
       - master
     paths:
       - docs/resume.md
+      - docs/resume-pdf-header.tex
   workflow_dispatch:
+
+env:
+  GEIST_FONT_VERSION: "1.7.2"
 
 jobs:
   build:
@@ -18,7 +22,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install pandoc, TeX Live, and modern fonts
+      - name: Install pandoc, TeX Live, and Geist fonts
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends \
@@ -28,23 +32,35 @@ jobs:
             texlive-latex-extra \
             texlive-xetex \
             lmodern \
-            fonts-inter
+            unzip \
+            fontconfig
+          curl -sL \
+            "https://github.com/vercel/geist-font/releases/download/v${GEIST_FONT_VERSION}/geist-font-v${GEIST_FONT_VERSION}.zip" \
+            -o /tmp/geist-font.zip
+          unzip -q /tmp/geist-font.zip -d /tmp
+          sudo mkdir -p /usr/share/fonts/truetype/geist
+          sudo cp /tmp/geist-font/Geist/ttf/*.ttf /usr/share/fonts/truetype/geist/
+          sudo cp /tmp/geist-font/GeistMono/ttf/*.ttf /usr/share/fonts/truetype/geist/
+          sudo fc-cache -fv
+          fc-list : family | grep -q '^Geist$' || { echo "Geist font not found"; exit 1; }
+          fc-list : family | grep -q '^Geist Mono$' || { echo "Geist Mono font not found"; exit 1; }
 
-      - name: Generate PDF with modern styling
-        # Uses XeLaTeX to allow system fonts (Inter) and custom spacing
+      - name: Generate PDF from resume.md
+        # Pandoc + XeLaTeX (same stack as resume-v1-from-the-90s.pdf, with Geist fonts).
         run: |
           pandoc docs/resume.md \
             --pdf-engine=xelatex \
-            --variable mainfont="Inter" \
-            --variable sansfont="Inter" \
-            --variable monofont="DejaVu Sans Mono" \
+            --include-in-header=docs/resume-pdf-header.tex \
+            --variable mainfont="Geist" \
+            --variable sansfont="Geist" \
+            --variable monofont="Geist Mono" \
             --variable geometry:margin=1in \
             --variable fontsize=11pt \
             --variable colorlinks=true \
             --variable linkcolor=blue \
             --variable urlcolor=blue \
             --variable parindent=0pt \
-            --variable parskip=10pt \
+            --variable parskip=6pt \
             -o docs/resume.pdf
 
       - name: Commit and push generated PDF
