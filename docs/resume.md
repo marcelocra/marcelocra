@@ -1,8 +1,6 @@
-# Marcelo Almeida
-
-**Full Stack Product Engineer & Indie Founder (Ex-Google)**
-
-Remote · [marcelo@uai.so](mailto:marcelo@uai.so) · [Site](https://marcelo.land) · [GitHub](https://github.com/marcelocra) · [LinkedIn](https://linkedin.com/in/marcelocra)
+```{=latex}
+\resumeheader{Remote · \href{mailto:marcelo@uai.so}{marcelo@uai.so} · \href{https://marcelo.land}{Site}\\[0.2em]\href{https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md}{Markdown CV} · \href{https://github.com/marcelocra}{GitHub}\\[0.2em]\href{https://linkedin.com/in/marcelocra}{LinkedIn}}
+```
 
 ## Summary
 
@@ -12,9 +10,9 @@ Ex-Google Engineer (Data Pipelines/Chromium) and ITA[^ita] graduate with 15+ yea
 
 ## Professional Experience
 
-### **Futurin** | Founder & Full Stack Product Engineer
-
-_Remote | 2023 — Present_
+```{=latex}
+\resumeentry{Futurin | Founder \& Full Stack Product Engineer}{Remote | 2023 — Present}
+```
 
 Founded a technical R&D lab to build developer tools, AI-native applications, and scalable automations.
 
@@ -26,26 +24,26 @@ Founded a technical R&D lab to build developer tools, AI-native applications, an
 - **Solo Founder AI Engine:** Developed a 3-Phase Workflow for AI-assisted development, optimizing costs and accuracy by leveraging different LLM models based on task complexity.
 - **High-Velocity Shipping:** Placed **Top 3** in Brazil's largest AI Hackathon (Adapta). Built an OOH analytics MVP in ~24 hours using Next.js and AI APIs.
 
-### **Vender Bem Online** | Founder & Digital Marketer
-
-_Remote | 2020 — Present_
+```{=latex}
+\resumeentry{Vender Bem Online | Founder \& Digital Marketer}{Remote | 2020 — Present}
+```
 
 Digital marketing agency focused on paid media and product launches (PLF).
 
 - **Execution & Copy**: Executed strategy and copy for product launches using the PLF method, learning sales psychology and user acquisition dynamics essential for building user-facing products.
 - **Strategy & Data**: Driven user acquisition via data-backed paid media strategies, bridging the gap between technical features and market positioning, a critical asset for early-stage engineering.
 
-### **Hubla** | Software Engineer
-
-_Remote | May 2022 — May 2023_
+```{=latex}
+\resumeentry{Hubla | Software Engineer}{Remote | May 2022 — May 2023}
+```
 
 - **System Design:** Structured the engineering team's design process, introducing mandatory RFCs which improved codebase quality and consistency.
 - **Core Features:** Implemented frontend for order bumps, upsells, and mobile checkout.
 - **Observability:** Designed and implemented logging infrastructure using OpenTelemetry specs.
 
-### **Google** | Software Engineer
-
-_Belo Horizonte, Brazil | Feb 2016 — Jan 2020_
+```{=latex}
+\resumeentry{Google | Software Engineer}{Belo Horizonte, Brazil | Feb 2016 — Jan 2020}
+```
 
 - **Chromium:** Worked on the C++ codebase with strict 6-week release cycles. Refactored legacy components to add new features while also decoupling existing architecture and improving maintainability.
 - **Data Pipelines:** Designed and built globally scalable data processing pipelines using Dataflow (Java).
@@ -60,10 +58,9 @@ _Belo Horizonte, Brazil | Feb 2016 — Jan 2020_
 
 ## Education
 
-### **ITA (Instituto Tecnológico de Aeronáutica)**
-
-**B.S. Computer Engineering**
-_São José dos Campos, Brazil | Jan 2010 — Dec 2015_
+```{=latex}
+\resumeentry{ITA (Instituto Tecnológico de Aeronáutica) | B.S. Computer Engineering}{São José dos Campos, Brazil | Jan 2010 — Dec 2015}
+```
 
 Widely regarded as one of Brazil's top engineering institutes (Top 1%), known for its extremely rigorous entry and high academic standards.
 

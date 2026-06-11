@@ -4,8 +4,8 @@
 
 \usepackage{enumitem}
 \setlist{
-  itemsep=2pt,
-  topsep=4pt,
+  itemsep=1pt,
+  topsep=2pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -14,12 +14,27 @@
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
 
+% Two-column header and entry rows (see resume.md raw LaTeX blocks).
+\newcommand{\resumeheader}[1]{%
+  \noindent
+  \begin{minipage}[t]{0.54\textwidth}
+    {\huge\bfseries Marcelo Almeida}\par\vspace{0.2em}
+    {\normalsize Full Stack Product Engineer \& Indie Founder (Ex-Google)}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.44\textwidth}
+    \raggedleft\footnotesize #1
+  \end{minipage}
+  \par\vspace{0.45em}
+}
+
+\newcommand{\resumeentry}[2]{%
+  \vspace{0.3em}%
+  \noindent{\fontsize{12}{14}\selectfont\bfseries #1}\hfill{\fontsize{10}{12}\selectfont\textit{#2}}%
+  \par\vspace{0.1em}%
+}
+
 \usepackage{titlesec}
-% Pandoc: # = section, ## = subsection, ### = subsubsection, ** = body bold.
-% Size steps (10pt base): name ~25pt, sections 15pt, entries 12pt, inline bold 10pt.
-\titleformat{\section}{\normalfont\huge\bfseries}{}{0em}{}
-\titleformat{\subsection}{\normalfont\fontsize{15}{18}\selectfont\bfseries}{}{0em}{}
-\titleformat{\subsubsection}{\normalfont\fontsize{12}{14}\selectfont\bfseries}{}{0em}{}
-\titlespacing*{\section}{0pt}{0pt}{0.4em}
-\titlespacing*{\subsection}{0pt}{1em plus .2em minus .2em}{0.35em plus .2em minus .2em}
-\titlespacing*{\subsubsection}{0pt}{0.6em plus .2em minus .2em}{0.15em plus .2em minus .2em}
+% Pandoc: ## = subsection, ** = body bold. Entry titles use \resumeentry instead of ###.
+\titleformat{\subsection}{\normalfont\fontsize{15}{17}\selectfont\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{0.65em plus .2em minus .2em}{0.2em plus .2em minus .2em}
