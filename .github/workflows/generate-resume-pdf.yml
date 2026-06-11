@@ -16,24 +16,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Cache pandoc and TeX Live packages
-        id: cache-tex
-        uses: actions/cache@v4
         with:
-          path: /var/cache/apt/archives
-          key: apt-pandoc-texlive-${{ runner.os }}-v1
+          fetch-depth: 0
 
-      - name: Install pandoc and TeX Live
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            pandoc \
-            texlive-latex-base \
-            texlive-fonts-recommended \
-            texlive-latex-extra \
-            texlive-xetex \
+      - name: Cache and install pandoc and TeX Live packages
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: >-
+            pandoc
+            texlive-latex-base
+            texlive-fonts-recommended
+            texlive-latex-extra
+            texlive-xetex
             lmodern
+          version: 1.0
 
       - name: Generate PDF from resume.md
         run: |
