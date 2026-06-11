@@ -32,7 +32,8 @@ jobs:
         # puppeteer version must match md-to-pdf's dep (pnpm v10 blocks install scripts).
         run: |
           pnpm dlx puppeteer@25.1.0 browsers install chrome
-          pnpm dlx md-to-pdf@5.2.5 docs/resume.md
+          pnpm dlx md-to-pdf@5.2.5 docs/resume.md \
+            --launch-options '{"args":["--no-sandbox","--disable-setuid-sandbox"]}'
 
       - name: Commit and push generated PDF
         run: |

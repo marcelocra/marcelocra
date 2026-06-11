@@ -47,7 +47,8 @@ jobs:
       - name: Generate PDF from resume.md
         run: |
           pnpm dlx puppeteer@${{ env.PUPPETEER_VERSION }} browsers install chrome
-          pnpm dlx md-to-pdf@${{ env.MD_TO_PDF_VERSION }} docs/resume.md
+          pnpm dlx md-to-pdf@${{ env.MD_TO_PDF_VERSION }} docs/resume.md \
+            --launch-options '{"args":["--no-sandbox","--disable-setuid-sandbox"]}'
 
       - name: Commit and push generated PDF
         run: |
