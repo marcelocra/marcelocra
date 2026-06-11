@@ -47,11 +47,34 @@ jobs:
           fc-list : family | grep -q '^Geist Mono$' || { echo "Geist Mono font not found"; exit 1; }
 
       - name: Generate PDF from resume.md
-        # Pandoc + XeLaTeX (same stack as resume-v1-from-the-90s.pdf, with Geist fonts).
+        id: pdf
+        env:
+          SOURCE_SHA: ${{ github.sha }}
         run: |
+          SHORT_SHA="${SOURCE_SHA:0:7}"
+          BUILD_DATE="$(date -u +%Y.%m.%d)"
+          BUILD_TIME="$(date -u +%H%M)"
+          PDF_NAME="resume-v${BUILD_DATE}-r${BUILD_TIME}-${SHORT_SHA}.pdf"
+          PDF_DIR="docs/pdfs"
+          PDF_PATH="${PDF_DIR}/${PDF_NAME}"
+          COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${SOURCE_SHA}"
+
+          mkdir -p "$PDF_DIR"
+
+          # Footer links the PDF back to the resume.md commit that triggered this build.
+          cat > /tmp/resume-pdf-footer.tex <<EOF
+          \usepackage{fancyhdr}
+          \pagestyle{fancy}
+          \fancyhf{}
+          \renewcommand{\headrulewidth}{0pt}
+          \renewcommand{\footrulewidth}{0pt}
+          \fancyfoot[C]{\footnotesize Built from \href{${COMMIT_URL}}{${SHORT_SHA}} (${BUILD_DATE} UTC)}
+          EOF
+
           pandoc docs/resume.md \
             --pdf-engine=xelatex \
             --include-in-header=docs/resume-pdf-header.tex \
+            --include-in-header=/tmp/resume-pdf-footer.tex \
             --variable mainfont="Geist" \
             --variable sansfont="Geist" \
             --variable monofont="Geist Mono" \
@@ -62,16 +85,50 @@ jobs:
             --variable urlcolor=blue \
             --variable parindent=0pt \
             --variable parskip=6pt \
-            -o docs/resume.pdf
+            -o "$PDF_PATH"
 
-      - name: Commit and push generated PDF
+          cp "$PDF_PATH" docs/resume.pdf
+
+          TAG_NAME="${PDF_NAME%.pdf}"
+          {
+            echo "pdf_path=$PDF_PATH"
+            echo "pdf_name=$PDF_NAME"
+            echo "tag_name=$TAG_NAME"
+            echo "short_sha=$SHORT_SHA"
+            echo "commit_url=$COMMIT_URL"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Commit, tag, and push
+        env:
+          PDF_PATH: ${{ steps.pdf.outputs.pdf_path }}
+          PDF_NAME: ${{ steps.pdf.outputs.pdf_name }}
+          TAG_NAME: ${{ steps.pdf.outputs.tag_name }}
+          SHORT_SHA: ${{ steps.pdf.outputs.short_sha }}
+          COMMIT_URL: ${{ steps.pdf.outputs.commit_url }}
+          SOURCE_SHA: ${{ github.sha }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/resume.pdf
+          git add docs/pdfs/ docs/resume.pdf
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "chore: regenerate resume.pdf from resume.md [skip ci]"
-            git push
+            exit 0
           fi
+
+          git commit -m "$(cat <<EOF
+          chore: add resume PDF ${PDF_NAME} [skip ci]
+
+          Source resume.md: ${COMMIT_URL}
+          EOF
+          )"
+
+          git tag -a "$TAG_NAME" -m "$(cat <<EOF
+          Resume PDF generated from resume.md at ${SOURCE_SHA}.
+
+          Source: ${COMMIT_URL}
+          Artifact: ${PDF_PATH}
+          EOF
+          )"
+
+          git push
+          git push origin "$TAG_NAME"
