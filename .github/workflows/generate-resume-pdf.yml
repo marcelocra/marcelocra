@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - docs/resume.md
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,30 +15,23 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Install pandoc and TeX Live packages
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            pandoc \
-            texlive-latex-base \
-            texlive-fonts-recommended \
-            texlive-latex-extra \
-            texlive-xetex \
-            lmodern
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
 
       - name: Generate PDF from resume.md
-        run: |
-          pandoc docs/resume.md \
-            --pdf-engine=xelatex \
-            --variable geometry:margin=1in \
-            --variable fontsize=11pt \
-            --variable colorlinks=true \
-            -o docs/resume.pdf
+        # pnpm dlx is the secure equivalent of npx.
+        # Pinning the version ensures formatting won't break unexpectedly.
+        run: pnpm dlx md-to-pdf@5.2.5 docs/resume.md
 
       - name: Commit and push generated PDF
         run: |
