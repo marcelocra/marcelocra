@@ -2,18 +2,7 @@
 
 **Full Stack Product Engineer & Indie Founder (Ex-Google)**
 
-```{=latex}
-\begin{center}
-\small
-\faMapMarker{} Remote \quad
-\faEnvelope{} \href{mailto:marcelo@uai.so}{marcelo@uai.so} \quad
-\faGlobe{} \href{https://marcelo.land}{Site}\\[0.5em]
-\faFileAlt{} \href{https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md}{Markdown CV} \quad
-\faGithub{} \href{https://github.com/marcelocra}{GitHub} \quad
-\faLinkedin{} \href{https://linkedin.com/in/marcelocra}{LinkedIn}
-\end{center}
-\vspace{0.8em}
-```
+Remote · [marcelo@uai.so](mailto:marcelo@uai.so) · [Site](https://marcelo.land) · [Markdown CV](https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md) · [GitHub](https://github.com/marcelocra) · [LinkedIn](https://linkedin.com/in/marcelocra)
 
 ## Summary
 

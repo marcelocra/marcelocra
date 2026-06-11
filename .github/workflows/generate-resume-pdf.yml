@@ -46,17 +46,6 @@ jobs:
           sudo fc-cache -fv
           fc-list : family | grep -q '^Geist$' || { echo "Geist font not found"; exit 1; }
           fc-list : family | grep -q '^Geist Mono$' || { echo "Geist Mono font not found"; exit 1; }
-          # fontawesome5.sty is in texlive-fonts-extra (~1.3 GB); install only this package from CTAN.
-          curl -fsSL "https://mirrors.ctan.org/fonts/fontawesome5.zip" -o /tmp/fontawesome5.zip
-          file /tmp/fontawesome5.zip | grep -q 'Zip archive' || { echo "fontawesome5.zip download failed"; exit 1; }
-          unzip -q /tmp/fontawesome5.zip -d /tmp
-          TEXMF_LOCAL=/usr/share/texlive/texmf-local
-          sudo mkdir -p "$TEXMF_LOCAL/tex/latex/fontawesome5"
-          sudo mkdir -p "$TEXMF_LOCAL/fonts/opentype/public/fontawesome5"
-          sudo cp /tmp/fontawesome5/tex/* "$TEXMF_LOCAL/tex/latex/fontawesome5/"
-          sudo cp /tmp/fontawesome5/opentype/*.otf "$TEXMF_LOCAL/fonts/opentype/public/fontawesome5/"
-          sudo texhash
-          kpsewhich fontawesome5.sty >/dev/null || { echo "fontawesome5.sty not found"; exit 1; }
 
       - name: Generate PDF from resume.md
         id: pdf
