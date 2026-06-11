@@ -5,7 +5,7 @@
 ```{=latex}
 \begin{center}
 \small
-\faMapMarker*{} Remote \quad
+\faMapMarker{} Remote \quad
 \faEnvelope{} \href{mailto:marcelo@uai.so}{marcelo@uai.so} \quad
 \faGlobe{} \href{https://marcelo.land}{Site}\\[0.5em]
 \faFileAlt{} \href{https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md}{Markdown CV} \quad
