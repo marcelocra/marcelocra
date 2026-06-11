@@ -27,6 +27,7 @@ jobs:
             texlive-fonts-recommended \
             texlive-latex-extra \
             texlive-xetex \
+            lmodern \
             fonts-inter
 
       - name: Generate PDF with modern styling
