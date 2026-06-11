@@ -1,0 +1,59 @@
+# Cached variant — disabled for automatic runs (manual trigger only).
+# Caches pnpm store and Puppeteer Chrome to speed up burst edits.
+# To use instead of generate-resume-pdf.yml, swap the `on:` blocks between the two files.
+name: Generate Resume PDF (cached)
+
+on:
+  workflow_dispatch:
+
+env:
+  MD_TO_PDF_VERSION: "5.2.5"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Get pnpm store directory
+        id: pnpm-store
+        shell: bash
+        run: echo "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache pnpm store and Puppeteer Chrome
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ steps.pnpm-store.outputs.path }}
+            ~/.cache/puppeteer
+          # Invalidates when md-to-pdf (and its Puppeteer) version changes
+          key: ${{ runner.os }}-md-to-pdf-${{ env.MD_TO_PDF_VERSION }}
+
+      - name: Generate PDF from resume.md
+        run: pnpm dlx md-to-pdf@${{ env.MD_TO_PDF_VERSION }} docs/resume.md
+
+      - name: Commit and push generated PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/resume.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: regenerate resume.pdf from resume.md [skip ci]"
+            git push
+          fi
