@@ -18,7 +18,8 @@ _Remote | 2023 — Present_
 
 Founded a technical R&D lab to build developer tools, AI-native applications, and scalable automations.
 
-- **Acerto AI & Infrastructure:** Architected custom VPS infrastructure (Hostinger) using Tailscale, Cloudflare, and Coolify to self-host LLM routing (LiteLLM) and complex workflow automations (n8n, Evolution API). This powers Acerto AI's automated collection and notification system.
+- **Acerto AI:** An automated collection and notification system for B2B. Built the MVP using n8n and the Evolution API to validate the idea quickly and solve a concrete business problem without writing unnecessary custom code. Currently onboarding our first client.
+- **Self-Hosted Infrastructure:** Configured and managed a custom VPS using Coolify and Docker. Currently host my LLM router (LiteLLM) and automation pipelines, gaining hands-on experience in server management outside of standard PaaS solutions.
 - **Override.sh:** Developing a browser extension for custom CSS/JS modifications featuring an integrated AI panel for real-time DOM manipulation.
 - **GhostKeys (AutoHotkey v2 & Rust):** Built a system-wide keyboard remapping utility leveraging a 4-step AI workflow (plan -> implement -> AI review -> human review). Successfully deployed complex logic in languages I had zero prior experience with.
 - **Concept Compass:** Built an infinite mind-map generator powered by OSS models. Managed local hardware constraints by transitioning to API routing solutions (e.g., OpenRouter), establishing the foundation for my current AI orchestration.
@@ -55,7 +56,7 @@ _Belo Horizonte, Brazil | Feb 2016 — Jan 2020_
 - **Core Languages:** TypeScript, JavaScript, Python, Shell.
 - **Main Stack:** React, Next.js, Node.js, Tailwind CSS, shadcn/ui, Zustand, Zod, Extensions API.
 - **Main Dev Tools:** Cursor, Zed, OpenCode/CLI agents, VS Code + GitHub Copilot, DevContainers.
-- **Infra & Tooling:** Docker, Podman, Coolify, n8n, LiteLLM, PostgreSQL/Supabase, OpenRouter.
+- **Infra & Tooling:** Docker, Podman, Coolify, n8n, LiteLLM, PostgreSQL/Supabase, OpenRouter, Tailscale, Cloudflare.
 
 ## Education
 

@@ -1,4 +1,4 @@
-## Product Engineer & Tool Builder | Ex-Google | ITA
+## Full Stack Product Engineer & Indie Founder | Ex-Google | ITA
 
 <div align="right">
 
@@ -7,21 +7,43 @@
 
 </div>
 
-My name is Marcelo. I'm a Computer Engineer from **ITA**[^ita] and a former **Google** engineer (Search, Data Pipelines / Dataflow, Chromium) with 15+ years of experience. I quit Big Tech to explore entrepreneurship and am now building **AI-native applications** and **tools**.
+My name is Marcelo. I'm a Computer Engineer from **ITA**[^ita] and a former **Google** engineer (Search, Data Pipelines / Dataflow, Chromium) with 15+ years of experience. I quit Big Tech to build **AI-native tools, browser extensions, and micro-SaaS products**.
 
-I use AI agents (Cursor, OpenCode, Roo Code, etc.) as force multipliers to ship high-quality code rapidly, while retaining control over system design and architecture.
+Currently, I operate as a Full Stack Product Engineer, using AI agents as force multipliers to ship code rapidly without sacrificing architectural quality or maintainability.
 
-[^ita]: Widely regarded as one of Brazil's top, if not the best, engineering institutes (Top 1%), known for its extremely rigorous entry and high academic standards.
+[^ita]: Widely regarded as one of Brazil's top engineering institutes (Top 1%), known for its extremely rigorous entry and high academic standards.
 
-## AI Apps & Tools
+## What I'm Building
 
-I am actively building with **AI Agents** and studying their impact on **Developer Experience (DX)**.
+I am actively building products with **AI Agents**, studying their impact on **Developer Experience (DX)**, and testing with self-hosted infrastructure.
 
-### 🦀 [ghostkeys](https://github.com/marcelocra/ghostkeys) (Rust + AI)
+In DX, I'm developing and testing a 4-step AI-assisted workflow to automate many parts of the development workflow. The goal is to achieve better results faster while reducing the cost of development.
 
-A high-performance keyboard remapper written in **Rust**.
+### 🏢 Acerto AI
 
-- **Why it matters:** I built this functional Rust desktop tray application in just a couple of days with **zero prior Rust experience**. The goal was to test if my product and system design ideas would port well to a strictly typed language using a spec-driven AI workflow. Built using Kiro (kiro.dev).
+An automated collection and notification system built for B2B.
+
+- **Why it matters:** Demonstrates the ability to solve concrete business problems using event-driven workflows and the simplest tools that allow one to validate the idea: the MVP was built using **n8n** and the **Evolution API** (running on my custom infra), with no custom code or complex deployments. Once the idea is validated (we are onboarding our first client), we can consider the next steps.
+
+### 🌐 Override.sh
+
+A browser extension for custom CSS/JS modifications, featuring an integrated AI panel for real-time DOM manipulation.
+
+- **Why it matters:** Honestly, I'm just building this to scratch my own itch using tech I already know well. The fun part is bridging the gap between browser extensions and LLMs: instead of me having to inspect elements and manually write Greasemonkey-like scripts, the AI gets direct access to the DOM to write and apply visual or functional patches on the fly.
+
+### ⌨️ ghostkeys (AutoHotkey v2 & Rust)
+
+A system-wide keyboard remapping utility that allows typing Brazilian Portuguese and English on a physical US-layout keyboard without having to change the system layout. No more `win+space`!
+
+- **Why it matters:** I built this leveraging AI to deploy complex, low-level system logic in languages I had zero prior experience with, proving that strong fundamentals translate across any syntax.
+  - **v1**: Rust. A functional desktop tray application built in just a couple of days with **zero prior Rust experience**. The goal was to test if my ideas would port well to a strictly typed language using a spec-driven AI workflow. Built using Kiro (kiro.dev). [Code here](https://github.com/marcelocra/ghostkeys).
+  - **v2**: AutoHotkey v2. The complete version that achieves my goal. I use it every day, all the time, and it saves me from a lot of frustrating typing mistakes. Brazilian coders will understand.
+
+### ⚙️ Self-Hosted AI & Automation Infrastructure
+
+Custom VPS setup orchestrated with Coolify.
+
+- **Why it matters:** I set this up to learn more about infrastructure and, eventually, have the actual knowledge to decide if it is worth moving away from PaaS or not. I had never managed a server before and it has been an interesting experience, especially because it opens many self-hosting options that I didn't know about. I learned the practical basics of server management and Docker orchestration. It currently hosts my LLM router (LiteLLM) and n8n pipelines.
 
 ### 🧠 [concept-compass](https://github.com/marcelocra/concept-compass)
 
@@ -41,21 +63,23 @@ A VS Code extension bundling quality-of-life improvements.
 
 - **Why it matters:** My first hands-on experience using the VS Code Extension API to optimize my own workflow.
 
-## Other Projects
+## Other Projects & Achievements
 
-- **[devmagic](https://github.com/marcelocra/devmagic):** A devcontainer setup that "just works," solving the "works on my machine" problem.
-- **Adapta AI Challenge:** **Top 3 Finalist** in Brazil's largest-ever hackathon. Built an OOH analytics tool in ~24h.
-- **[Viralei](https://viralei.com.br):** **Hackathon Project.** Turns legislative bills into engaging videos. Built the MVP in 4 days.
-- **Fair Pricing Works:** Open Source initiative advocating for Purchasing Power Parity (PPP).
+- **Adapta AI Challenge:** **Top 3 Finalist** in Brazil's largest AI hackathon. Built an OOH analytics MVP using Next.js and AI APIs in ~24h.
+- **[devmagic](https://github.com/marcelocra/devmagic):** A devcontainer setup that solves the "works on my machine" problem.
+- **[Viralei](https://viralei.com.br):** Hackathon MVP built in 4 days that turns legislative bills into engaging videos.
+- To be made open source when I finish the initial write up and websites:
+  - **Fair Pricing Works:** Initiative advocating for Purchasing Power Parity (PPP).
+  - **Do I Need A License?** Project that I created when answering that question for myself.
 
 ## Tech Stack
 
-I wrote my first line of code in 2010 (in C). Today, I choose tools that mix personal preference, velocity, and leverage.
+I choose tools that mix personal preference, velocity, and leverage.
 
-- **Core:** TypeScript, React, Next.js, Node.js, Tailwind CSS.
-- **Systems & AI:** Rust, Python (Automation/Pipelines), C++ (Google background).
-- **AI Workflow:** Zed, Cursor, OpenCode/Aider, VS Code (with Roo Code & Continue.dev), Gemini CLI, Google Antigravity, and Google Jules.
-- **Tooling:** OpenRouter, Anthropic API, Google AI Studio, Firebase Studio, Chrome Extensions API, Docker/Podman, DevContainers.
+- **Core Languages:** TypeScript, JavaScript, Python.
+- **Main Stack:** React, Next.js, Node.js, Tailwind CSS, shadcn/ui, Zustand, Zod, Extensions API.
+- **Main Dev Tools:** Cursor, Zed, OpenCode/CLI agents, VS Code + GitHub Copilot, DevContainers.
+- **Infra & Tooling:** Docker, Podman, Coolify, n8n, LiteLLM, PostgreSQL/Supabase, OpenRouter, Tailscale, Cloudflare.
 
 ## What I Believe
 
