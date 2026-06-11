@@ -8,6 +8,7 @@ on:
 
 env:
   MD_TO_PDF_VERSION: "5.2.5"
+  PUPPETEER_VERSION: "25.1.0"
 
 jobs:
   build:
@@ -40,11 +41,13 @@ jobs:
           path: |
             ${{ steps.pnpm-store.outputs.path }}
             ~/.cache/puppeteer
-          # Invalidates when md-to-pdf (and its Puppeteer) version changes
-          key: ${{ runner.os }}-md-to-pdf-${{ env.MD_TO_PDF_VERSION }}
+          # Bump when md-to-pdf or puppeteer versions change
+          key: ${{ runner.os }}-md-to-pdf-${{ env.MD_TO_PDF_VERSION }}-puppeteer-${{ env.PUPPETEER_VERSION }}
 
       - name: Generate PDF from resume.md
-        run: pnpm dlx md-to-pdf@${{ env.MD_TO_PDF_VERSION }} docs/resume.md
+        run: |
+          pnpm dlx puppeteer@${{ env.PUPPETEER_VERSION }} browsers install chrome
+          pnpm dlx md-to-pdf@${{ env.MD_TO_PDF_VERSION }} docs/resume.md
 
       - name: Commit and push generated PDF
         run: |

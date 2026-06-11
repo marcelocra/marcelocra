@@ -29,9 +29,10 @@ jobs:
           node-version: 24
 
       - name: Generate PDF from resume.md
-        # pnpm dlx is the secure equivalent of npx.
-        # Pinning the version ensures formatting won't break unexpectedly.
-        run: pnpm dlx md-to-pdf@5.2.5 docs/resume.md
+        # puppeteer version must match md-to-pdf's dep (pnpm v10 blocks install scripts).
+        run: |
+          pnpm dlx puppeteer@25.1.0 browsers install chrome
+          pnpm dlx md-to-pdf@5.2.5 docs/resume.md
 
       - name: Commit and push generated PDF
         run: |
