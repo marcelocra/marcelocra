@@ -19,17 +19,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Cache and install pandoc and TeX Live packages
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: >-
-            pandoc
-            texlive-latex-base
-            texlive-fonts-recommended
-            texlive-latex-extra
-            texlive-xetex
+      - name: Install pandoc and TeX Live packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            pandoc \
+            texlive-latex-base \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-xetex \
             lmodern
-          version: 1.0
 
       - name: Generate PDF from resume.md
         run: |
