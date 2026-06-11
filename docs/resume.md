@@ -1,8 +1,7 @@
 # Marcelo Almeida
 
-**Full Stack Product Engineer & Indie Founder (Ex-Google)**\
-Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marcelo.land) | [markdown version](https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md)\
-[github.com/marcelocra](https://github.com/marcelocra) | [linkedin.com/in/marcelocra](https://linkedin.com/in/marcelocra)
+**Full Stack Product Engineer & Indie Founder (Ex-Google)**  
+Remote | marcelo@uai.so | [Site](https://marcelo.land) | [Markdown CV](https://github.com/marcelocra/marcelocra/blob/master/docs/resume.md) | [GitHub](https://github.com/marcelocra) | [LinkedIn](https://linkedin.com/in/marcelocra)
 
 ## Summary
 
