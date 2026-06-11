@@ -1,17 +1,4 @@
-% Resume PDF typography tweaks (fonts set via pandoc -V variables).
-\usepackage{enumitem}
-\setlist{
-  itemsep=2pt,
-  topsep=4pt,
-  parsep=0pt,
-  partopsep=0pt
-}
-
-% Avoid awkward mid-word breaks in a resume.
+% Resume PDF tweaks (fonts set via pandoc -V variables).
+% Avoid awkward mid-word breaks; no extra LaTeX packages required.
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
-
-\usepackage{titlesec}
-\titlespacing*{\section}{0pt}{1em plus .2em minus .2em}{0.5em plus .2em minus .2em}
-\titlespacing*{\subsection}{0pt}{0.75em plus .2em minus .2em}{0.25em plus .2em minus .2em}
-\titlespacing*{\subsubsection}{0pt}{0.5em plus .2em minus .2em}{0.15em plus .2em minus .2em}
