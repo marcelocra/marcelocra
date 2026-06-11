@@ -18,31 +18,33 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-
-      - name: Install System Fonts
-        # Resolve the problem of bold fonts by installing default fonts on Ubuntu.
+      - name: Install pandoc, TeX Live, and modern fonts
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends fonts-liberation fonts-inter
+          sudo apt-get install -y --no-install-recommends \
+            pandoc \
+            texlive-latex-base \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-xetex \
+            fonts-inter
 
-      - name: Generate PDF from resume.md
-        # puppeteer version must match md-to-pdf's dep (pnpm v10 blocks install scripts).
-        # puppeteer installs Chrome. The stylesheet ensures the GitHub look.
+      - name: Generate PDF with modern styling
+        # Uses XeLaTeX to allow system fonts (Inter) and custom spacing
         run: |
-          pnpm dlx puppeteer@25.1.0 browsers install chrome
-          pnpm dlx md-to-pdf@5.2.5 docs/resume.md \
-            --stylesheet https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css \
-            --body-class markdown-body \
-            --launch-options '{"args":["--no-sandbox","--disable-setuid-sandbox"]}'
+          pandoc docs/resume.md \
+            --pdf-engine=xelatex \
+            --variable mainfont="Inter" \
+            --variable sansfont="Inter" \
+            --variable monofont="DejaVu Sans Mono" \
+            --variable geometry:margin=1in \
+            --variable fontsize=11pt \
+            --variable colorlinks=true \
+            --variable linkcolor=blue \
+            --variable urlcolor=blue \
+            --variable parindent=0pt \
+            --variable parskip=10pt \
+            -o docs/resume.pdf
 
       - name: Commit and push generated PDF
         run: |

@@ -6,9 +6,9 @@ Remote | [hi@marcelo.land](mailto:hi@marcelo.land) | [marcelo.land](https://marc
 
 ## Summary
 
-Ex-Google Engineer (Data Pipelines/Chromium) and ITA* graduate with 15+ years of experience. I quit Google to build AI-native tools, browser extensions, and micro-SaaS products. Currently operating as a **Full Stack Product Engineer**, using AI to ship code rapidly without sacrificing architectural quality or maintainability.
+Ex-Google Engineer (Data Pipelines/Chromium) and ITA[^ita] graduate with 15+ years of experience. I quit Google to build AI-native tools, browser extensions, and micro-SaaS products. Currently operating as a **Full Stack Product Engineer**, using AI to ship code rapidly without sacrificing architectural quality or maintainability.
 
-* Widely regarded as one of Brazil's top engineering institutes (Top 1%), known for its extremely rigorous entry and high academic standards.
+[^ita]: Widely regarded as one of Brazil's top engineering institutes (Top 1%), known for its extremely rigorous entry and high academic standards.
 
 ## Professional Experience
 
