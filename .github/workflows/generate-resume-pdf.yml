@@ -72,8 +72,9 @@ jobs:
           xelatex -interaction=nonstopmode -halt-on-error resume.tex
           rm -f resume.aux resume.log resume.out resume-build-info.tex
 
+          # Copy generated resume.pdf to the target PDF path, and overwrite docs/resume.pdf with the latest PDF
           cp resume.pdf "../${PDF_PATH}"
-          cp resume.pdf resume.pdf
+          cp resume.pdf ../resume.pdf
 
           TAG_NAME="${PDF_NAME%.pdf}"
           {
