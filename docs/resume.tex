@@ -1,91 +1,83 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
-\usepackage[margin=0.75in]{geometry}
-\usepackage{fontspec}
-\setmainfont{Geist}[
-  BoldFont = Geist Bold,
-  ItalicFont = Geist Italic,
-  BoldItalicFont = Geist Bold Italic,
-]
-\setsansfont{Geist}
-\setmonofont{Geist Mono}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\IfFileExists{sourcesanspro.sty}{%
+  \usepackage[default]{sourcesanspro}
+}{%
+  \usepackage[scaled=0.95]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+}
 
-\usepackage{hyperref}
-\usepackage{xcolor}
-\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
 
 \usepackage{ragged2e}
 \AtBeginDocument{\RaggedRight}
 
 \usepackage{array}
 \usepackage{enumitem}
-\setlist{
+\usepackage{titlesec}
+
+\setlist{%
   itemsep=1pt,
   topsep=2pt,
   parsep=0pt,
   partopsep=0pt,
-  leftmargin=1.35em,
+  leftmargin=1.2em,
 }
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\pagestyle{empty}
 
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{3pt plus 1pt minus 1pt}
+\setlength{\parskip}{2pt plus 1pt minus 1pt}
 
-\IfFileExists{resume-build-info.tex}{\input{resume-build-info.tex}}{%
-  \providecommand{\ResumeBuildSha}{dev}%
-  \providecommand{\ResumeBuildIso}{}%
-  \providecommand{\ResumeCommitUrl}{https://github.com/marcelocra/marcelocra}%
-}
-\fancyfoot[C]{\scriptsize Built from \href{\ResumeCommitUrl}{\ResumeBuildSha} (\ResumeBuildIso)}
+\IfFileExists{glyphtounicode.tex}{%
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+}{}
 
-\newcommand{\resumesection}[1]{%
-  \vspace{0.45em}%
-  {\fontsize{12.5}{14.5}\selectfont\bfseries #1}\par\vspace{0.12em}%
-}
+\titleformat{\section}
+  {\vspace{0.35em}\large\scshape\raggedright}
+  {}{0em}{}[\vspace{0.15em}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
 
-% title left (65%), meta right (33%) — fixed widths prevent awkward wraps under the title
-\newcommand{\resumeentry}[2]{%
-  \vspace{0.18em}%
+\newcommand{\resumelink}[2]{\href{#1}{\underline{#2}}}
+\newcommand{\resumeSep}{\enspace$\vert$\enspace}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{0.12em}%
   \noindent
-  \begin{tabular*}{\textwidth}{@{}p{0.65\textwidth}@{}p{0.33\textwidth}@{}}
-    {\fontsize{10.5}{12.5}\selectfont\bfseries #1} &
-    \begin{minipage}[t]{\linewidth}\raggedleft\fontsize{9.5}{11}\selectfont\textit{#2}\end{minipage}
+  \begin{tabular*}{\textwidth}{@{}p{0.68\textwidth}@{\extracolsep{\fill}}r@{}}
+    {\bfseries #1} & {\textit{#2}} \\
+    {\small\textit{#3}} & {\small\textit{#4}}
   \end{tabular*}%
-  \par\vspace{0.04em}%
+  \par\vspace{0.06em}%
 }
 
 \begin{document}
 
-\noindent
-\begin{tabular*}{\textwidth}{@{}p{0.62\textwidth}@{}p{0.36\textwidth}@{}}
-  \begin{minipage}[t]{\linewidth}
-    {\fontsize{20}{22}\selectfont\bfseries Marcelo Almeida}\par\vspace{0.15em}
-    {\fontsize{10}{12}\selectfont Full Stack Product Engineer \& Indie Founder (Ex-Google)}
-  \end{minipage} &
-  \begin{minipage}[t]{\linewidth}
-    \raggedleft\fontsize{9}{10.5}\selectfont
-    Remote · \href{mailto:marcelo@uai.so}{marcelo@uai.so} · \href{https://marcelo.land}{Site}\\[0.15em]
-    \href{https://github.com/marcelocra}{GitHub} ·
-    \href{https://linkedin.com/in/marcelocra}{LinkedIn}
-  \end{minipage}
-\end{tabular*}
+\begin{center}
+  {\Huge\scshape Marcelo Almeida}\par\vspace{0.15em}
+  {\normalsize Full Stack Product Engineer \& Indie Founder (Ex-Google)}\par\vspace{0.35em}
+  {\small
+    Remote\resumeSep\resumelink{mailto:marcelo@uai.so}{marcelo@uai.so}\resumeSep\resumelink{https://marcelo.land}{Site}\\
+    \resumelink{https://github.com/marcelocra}{GitHub}\resumeSep\resumelink{https://linkedin.com/in/marcelocra}{LinkedIn}
+  }
+\end{center}
 
-\vspace{0.35em}
-
-\resumesection{Summary}
+\section{Summary}
 
 Ex-Google Engineer (Data Pipelines/Chromium) and ITA\footnote{Widely regarded as one of Brazil's top engineering institutes (Top 1\%), known for its extremely rigorous entry and high academic standards.} graduate with 15+ years of experience. I quit Google to build AI-native tools, browser extensions, and micro-SaaS products. Currently operating as a \textbf{Full Stack Product Engineer}, using AI to ship code rapidly without sacrificing architectural quality or maintainability.
 
-\resumesection{Professional Experience}
+\section{Professional Experience}
 
-\resumeentry{Futurin · Founder \& Full Stack Product Engineer}{Remote\\2023 — Present}
+\resumeSubheading{Futurin}{Remote}{Founder \& Full Stack Product Engineer}{2023 --- Present}
 
 Founded a technical R\&D lab to build developer tools, AI-native applications, and scalable automations.
 
@@ -99,7 +91,7 @@ Founded a technical R\&D lab to build developer tools, AI-native applications, a
   \item \textbf{High-Velocity Shipping:} Placed \textbf{Top 3} in Brazil's largest AI Hackathon (Adapta). Built an OOH analytics MVP in \textasciitilde24 hours using Next.js and AI APIs.
 \end{itemize}
 
-\resumeentry{Vender Bem Online · Founder \& Digital Marketer}{Remote\\2020 — Present}
+\resumeSubheading{Vender Bem Online}{Remote}{Founder \& Digital Marketer}{2020 --- Present}
 
 Digital marketing agency focused on paid media and product launches (PLF).
 
@@ -108,7 +100,7 @@ Digital marketing agency focused on paid media and product launches (PLF).
   \item \textbf{Strategy \& Data:} Driven user acquisition via data-backed paid media strategies, bridging the gap between technical features and market positioning, a critical asset for early-stage engineering.
 \end{itemize}
 
-\resumeentry{Hubla · Software Engineer}{Remote\\May 2022 — May 2023}
+\resumeSubheading{Hubla}{Remote}{Software Engineer}{May 2022 --- May 2023}
 
 \begin{itemize}
   \item \textbf{System Design:} Structured the engineering team's design process, introducing mandatory RFCs which improved codebase quality and consistency.
@@ -116,7 +108,7 @@ Digital marketing agency focused on paid media and product launches (PLF).
   \item \textbf{Observability:} Designed and implemented logging infrastructure using OpenTelemetry specs.
 \end{itemize}
 
-\resumeentry{Google · Software Engineer}{Belo Horizonte, Brazil\\Feb 2016 — Jan 2020}
+\resumeSubheading{Google}{Belo Horizonte, Brazil}{Software Engineer}{Feb 2016 --- Jan 2020}
 
 \begin{itemize}
   \item \textbf{Chromium:} Worked on the C++ codebase with strict 6-week release cycles. Refactored legacy components to add new features while also decoupling existing architecture and improving maintainability.
@@ -124,21 +116,21 @@ Digital marketing agency focused on paid media and product launches (PLF).
   \item \textbf{Cross-Functional:} Acted as the technical bridge between PMs and Design to ensure the technical feasibility of new features.
 \end{itemize}
 
-\resumesection{Skills \& Stack}
+\section{Skills \& Stack}
 
-\begin{itemize}
-  \item \textbf{Core Languages:} TypeScript, JavaScript, Python, Shell.
-  \item \textbf{Main Stack:} React, Next.js, Node.js, Tailwind CSS, shadcn/ui, Zustand, Zod, Extensions API.
-  \item \textbf{Main Dev Tools:} Cursor, Zed, OpenCode/CLI agents, VS Code + GitHub Copilot, DevContainers.
-  \item \textbf{Infra \& Tooling:} Docker, Podman, Coolify, n8n, LiteLLM, PostgreSQL/Supabase, OpenRouter, Tailscale, Cloudflare.
-\end{itemize}
+{\small
+\textbf{Core Languages:} TypeScript, JavaScript, Python, Shell.\\
+\textbf{Main Stack:} React, Next.js, Node.js, Tailwind CSS, shadcn/ui, Zustand, Zod, Extensions API.\\
+\textbf{Main Dev Tools:} Cursor, Zed, OpenCode/CLI agents, VS Code, GitHub Copilot, DevContainers.\\
+\textbf{Infra \& Tooling:} Docker, Podman, Coolify, n8n, LiteLLM, PostgreSQL/Supabase, OpenRouter, Tailscale, Cloudflare.
+}
 
-\resumesection{Education}
+\section{Education}
 
-\resumeentry{ITA (Instituto Tecnológico de Aeronáutica) · B.S. Computer Engineering}{São José dos Campos, Brazil\\Jan 2010 — Dec 2015}
+\resumeSubheading{ITA (Instituto Tecnológico de Aeronáutica)}{São José dos Campos, Brazil}{B.S. Computer Engineering}{Jan 2010 --- Dec 2015}
 
 Widely regarded as one of Brazil's top engineering institutes (Top 1\%), known for its extremely rigorous entry and high academic standards.
 
-\textbf{Exchange year at University of Twente and TU/e (Netherlands) | 2013}
+\textbf{Exchange year at University of Twente and TU/e (Netherlands) \textbar{} 2013}
 
 \end{document}
