@@ -6,10 +6,10 @@ on:
       - master
     paths:
       - docs/resume.tex
+      - .github/workflows/generate-resume-pdf.yml
   workflow_dispatch:
 
 env:
-  GEIST_FONT_VERSION: "1.7.2"
   TZ: America/Sao_Paulo
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install TeX Live and Geist fonts
+      - name: Install TeX Live
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends \
@@ -30,21 +30,7 @@ jobs:
             texlive-fonts-recommended \
             texlive-latex-recommended \
             texlive-latex-extra \
-            texlive-xetex \
-            lmodern \
-            unzip \
-            fontconfig
-          curl -fsSL \
-            "https://github.com/vercel/geist-font/releases/download/v${GEIST_FONT_VERSION}/geist-font-v${GEIST_FONT_VERSION}.zip" \
-            -o /tmp/geist-font.zip
-          file /tmp/geist-font.zip | grep -q 'Zip archive' || { echo "geist-font.zip download failed"; exit 1; }
-          unzip -q /tmp/geist-font.zip -d /tmp
-          sudo mkdir -p /usr/share/fonts/truetype/geist
-          sudo cp /tmp/geist-font/Geist/ttf/*.ttf /usr/share/fonts/truetype/geist/
-          sudo cp /tmp/geist-font/GeistMono/ttf/*.ttf /usr/share/fonts/truetype/geist/
-          sudo fc-cache -fv
-          fc-list : family | grep -q '^Geist$' || { echo "Geist font not found"; exit 1; }
-          fc-list : family | grep -q '^Geist Mono$' || { echo "Geist Mono font not found"; exit 1; }
+            lmodern
 
       - name: Generate PDF from resume.tex
         id: pdf
@@ -54,7 +40,7 @@ jobs:
           SHORT_SHA="${SOURCE_SHA:0:7}"
           BUILD_DATE="$(date +%Y.%m.%d)"
           BUILD_TIME="$(date +%H%M)"
-          BUILD_ISO="$(date +%Y-%m-%dT%H:%M:%S-03:00)"
+          BUILD_ISO="$(date +%Y-%m-%dT%H:%M:%S%:z)"
           PDF_NAME="resume-v${BUILD_DATE}-r${BUILD_TIME}-${SHORT_SHA}.pdf"
           PDF_DIR="docs/pdfs"
           PDF_PATH="${PDF_DIR}/${PDF_NAME}"
@@ -69,7 +55,7 @@ jobs:
           EOF
 
           cd docs
-          xelatex -interaction=nonstopmode -halt-on-error resume.tex
+          pdflatex -interaction=nonstopmode -halt-on-error resume.tex
           rm -f resume.aux resume.log resume.out resume-build-info.tex
 
           # Copy generated resume.pdf to the target PDF path, and overwrite docs/resume.pdf with the latest PDF
