@@ -1,0 +1,145 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Geist}[
+  BoldFont = Geist Bold,
+  ItalicFont = Geist Italic,
+  BoldItalicFont = Geist Bold Italic,
+]
+\setsansfont{Geist}
+\setmonofont{Geist Mono}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\usepackage{ragged2e}
+\AtBeginDocument{\RaggedRight}
+
+\usepackage{array}
+\usepackage{enumitem}
+\setlist{
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt,
+  leftmargin=1.35em,
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt plus 1pt minus 1pt}
+
+\IfFileExists{resume-build-info.tex}{\input{resume-build-info.tex}}{%
+  \providecommand{\ResumeBuildSha}{dev}%
+  \providecommand{\ResumeBuildIso}{}%
+  \providecommand{\ResumeCommitUrl}{https://github.com/marcelocra/marcelocra}%
+}
+\fancyfoot[C]{\scriptsize Built from \href{\ResumeCommitUrl}{\ResumeBuildSha} (\ResumeBuildIso)}
+
+\newcommand{\resumesection}[1]{%
+  \vspace{0.45em}%
+  {\fontsize{12.5}{14.5}\selectfont\bfseries #1}\par\vspace{0.12em}%
+}
+
+% title left (65%), meta right (33%) — fixed widths prevent awkward wraps under the title
+\newcommand{\resumeentry}[2]{%
+  \vspace{0.18em}%
+  \noindent
+  \begin{tabular*}{\textwidth}{@{}p{0.65\textwidth}@{}p{0.33\textwidth}@{}}
+    {\fontsize{10.5}{12.5}\selectfont\bfseries #1} &
+    \begin{minipage}[t]{\linewidth}\raggedleft\fontsize{9.5}{11}\selectfont\textit{#2}\end{minipage}
+  \end{tabular*}%
+  \par\vspace{0.04em}%
+}
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{@{}p{0.62\textwidth}@{}p{0.36\textwidth}@{}}
+  \begin{minipage}[t]{\linewidth}
+    {\fontsize{20}{22}\selectfont\bfseries Marcelo Almeida}\par\vspace{0.15em}
+    {\fontsize{10}{12}\selectfont Full Stack Product Engineer \& Indie Founder (Ex-Google)}
+  \end{minipage} &
+  \begin{minipage}[t]{\linewidth}
+    \raggedleft\fontsize{9}{10.5}\selectfont
+    Remote · \href{mailto:marcelo@uai.so}{marcelo@uai.so} · \href{https://marcelo.land}{Site}\\[0.15em]
+    \href{https://github.com/marcelocra/marcelocra/blob/master/docs/resume.tex}{LaTeX source} ·
+    \href{https://github.com/marcelocra}{GitHub}\\[0.15em]
+    \href{https://linkedin.com/in/marcelocra}{LinkedIn}
+  \end{minipage}
+\end{tabular*}
+
+\vspace{0.35em}
+
+\resumesection{Summary}
+
+Ex-Google Engineer (Data Pipelines/Chromium) and ITA\footnote{Widely regarded as one of Brazil's top engineering institutes (Top 1\%), known for its extremely rigorous entry and high academic standards.} graduate with 15+ years of experience. I quit Google to build AI-native tools, browser extensions, and micro-SaaS products. Currently operating as a \textbf{Full Stack Product Engineer}, using AI to ship code rapidly without sacrificing architectural quality or maintainability.
+
+\resumesection{Professional Experience}
+
+\resumeentry{Futurin · Founder \& Full Stack Product Engineer}{Remote\\2023 — Present}
+
+Founded a technical R\&D lab to build developer tools, AI-native applications, and scalable automations.
+
+\begin{itemize}
+  \item \textbf{Acerto AI:} An automated collection and notification system for B2B. Built the MVP using n8n and the Evolution API to validate the idea quickly and solve a concrete business problem without writing unnecessary custom code. Currently onboarding our first client.
+  \item \textbf{Self-Hosted Infrastructure:} Configured and managed a custom VPS using Coolify and Docker. Currently host my LLM router (LiteLLM) and automation pipelines, gaining hands-on experience in server management outside of standard PaaS solutions.
+  \item \textbf{Override.sh:} Developing a browser extension for custom CSS/JS modifications featuring an integrated AI panel for real-time DOM manipulation.
+  \item \textbf{GhostKeys (AutoHotkey v2 \& Rust):} Built a system-wide keyboard remapping utility leveraging a 4-step AI workflow I'm developing. Successfully deployed complex logic in languages I had zero prior experience with.
+  \item \textbf{Concept Compass:} Built an infinite mind-map generator powered by OSS models. Managed local hardware constraints by transitioning to API routing solutions (e.g., OpenRouter), establishing the foundation for my current AI orchestration.
+  \item \textbf{Solo Founder AI Engine:} Developed a 3-Phase Workflow for AI-assisted development, optimizing costs and accuracy by leveraging different LLM models based on task complexity.
+  \item \textbf{High-Velocity Shipping:} Placed \textbf{Top 3} in Brazil's largest AI Hackathon (Adapta). Built an OOH analytics MVP in \textasciitilde24 hours using Next.js and AI APIs.
+\end{itemize}
+
+\resumeentry{Vender Bem Online · Founder \& Digital Marketer}{Remote\\2020 — Present}
+
+Digital marketing agency focused on paid media and product launches (PLF).
+
+\begin{itemize}
+  \item \textbf{Execution \& Copy:} Executed strategy and copy for product launches using the PLF method, learning sales psychology and user acquisition dynamics essential for building user-facing products.
+  \item \textbf{Strategy \& Data:} Driven user acquisition via data-backed paid media strategies, bridging the gap between technical features and market positioning, a critical asset for early-stage engineering.
+\end{itemize}
+
+\resumeentry{Hubla · Software Engineer}{Remote\\May 2022 — May 2023}
+
+\begin{itemize}
+  \item \textbf{System Design:} Structured the engineering team's design process, introducing mandatory RFCs which improved codebase quality and consistency.
+  \item \textbf{Core Features:} Implemented frontend for order bumps, upsells, and mobile checkout.
+  \item \textbf{Observability:} Designed and implemented logging infrastructure using OpenTelemetry specs.
+\end{itemize}
+
+\resumeentry{Google · Software Engineer}{Belo Horizonte, Brazil\\Feb 2016 — Jan 2020}
+
+\begin{itemize}
+  \item \textbf{Chromium:} Worked on the C++ codebase with strict 6-week release cycles. Refactored legacy components to add new features while also decoupling existing architecture and improving maintainability.
+  \item \textbf{Data Pipelines:} Designed and built globally scalable data processing pipelines using Dataflow (Java).
+  \item \textbf{Cross-Functional:} Acted as the technical bridge between PMs and Design to ensure the technical feasibility of new features.
+\end{itemize}
+
+\resumesection{Skills \& Stack}
+
+\begin{itemize}
+  \item \textbf{Core Languages:} TypeScript, JavaScript, Python, Shell.
+  \item \textbf{Main Stack:} React, Next.js, Node.js, Tailwind CSS, shadcn/ui, Zustand, Zod, Extensions API.
+  \item \textbf{Main Dev Tools:} Cursor, Zed, OpenCode/CLI agents, VS Code + GitHub Copilot, DevContainers.
+  \item \textbf{Infra \& Tooling:} Docker, Podman, Coolify, n8n, LiteLLM, PostgreSQL/Supabase, OpenRouter, Tailscale, Cloudflare.
+\end{itemize}
+
+\resumesection{Education}
+
+\resumeentry{ITA (Instituto Tecnológico de Aeronáutica) · B.S. Computer Engineering}{São José dos Campos, Brazil\\Jan 2010 — Dec 2015}
+
+Widely regarded as one of Brazil's top engineering institutes (Top 1\%), known for its extremely rigorous entry and high academic standards.
+
+\textbf{Exchange year at University of Twente and TU/e (Netherlands) | 2013}
+
+\end{document}
